@@ -1,0 +1,681 @@
+ACUS74 KEWX 110337 AAB
+PSHEWX
+
+POST TROPICAL CYCLONE REPORT...HURRICANE HARVEY...UPDATED
+NATIONAL WEATHER SERVICE AUSTIN/SAN ANTONIO TX
+1036 PM CDT TUE OCT 10 2017
+
+
+NOTE: THE DATA SHOWN HERE ARE PRELIMINARY....AND SUBJECT TO UPDATES
+AND CORRECTIONS AS APPROPRIATE.
+
+THIS REPORT INCLUDES EVENTS OCCURRING WHEN WATCHES AND/OR WARNINGS
+WERE IN EFFECT...OR WHEN SIGNIFICANT FLOODING ASSOCIATED WITH HARVEY
+
+COUNTIES INCLUDED...ATASCOSA...BASTROP...BEXAR...CALDWELL...COMAL...
+DEWITT...FAYETTE...GONZALES...GUADALUPE...HAYS...KARNES...LAVACA...
+LEE...TRAVIS...WILLIAMSON...WILSON
+
+
+SEP 04...UPDATED FOR...INLAND FLOODING AND STORM EFFECTS FOR
+GUADALUPE COUNTY.
+
+OCT 11...UPDATED FOR...ADDITIONAL COOPERATIVE OBSERVER RAINFALL
+REPORTS.
+
+SEP 03...CORRECTED FOR...MAX SUSTAINED WIND...PEAK WIND GUSTS AND/OR
+TIMES FOR KT20...KSKF...KSAT...KRND...KHYI...KGTU...KDRT...KDLF...
+AND KUVA.
+
+
+
+
+
+
+A. LOWEST SEA LEVEL PRESSURE/MAXIMUM SUSTAINED WINDS AND PEAK GUSTS
+---------------------------------------------------------------------
+METAR OBSERVATIONS...
+NOTE: ANEMOMETER HEIGHT IS 10 METERS AND WIND AVERAGING IS 2 MINUTES
+---------------------------------------------------------------------
+LOCATION  ID    MIN    DATE/     MAX      DATE/     PEAK    DATE/
+LAT  LON        PRES   TIME      SUST     TIME      GUST    TIME
+DEG DECIMAL     (MB)   (UTC)     (KT)     (UTC)     (KT)    (UTC)
+---------------------------------------------------------------------
+KT20-GONZALES                                                       
+29.52 -97.46    996.2 26/1715   060/030  26/1715   050/045 26/1455  
+
+K3T5-LA GRANGE/FAYETTE REGIONAL AIRPORT                             
+29.91 -96.95   1001.8 26/2115   050/020  26/1615   100/035 26/1635  
+
+KGYB-GIDDINGS                                                       
+30.17 -96.98   1001.9 26/2335   070/026  27/0455   070/038 27/0455  
+
+KPEZ-PLEASANTON                                                     
+28.95 -98.52   1002.9 27/0955   340/026  26/1715   320/037 26/2055  
+
+KSSF-SAN ANTONIO STINSON MUNICIPAL AIRPORT                          
+29.33 -98.47   1001.4 27/0753   350/026  26/1802   350/039 26/1626  
+
+KSKF-PORT SAN ANTONIO                                               
+29.38 -98.58   1002.7 27/0730   340/026  26/1258   350/042 26/1617  
+
+KSAT-SAN ANTONIO INTERNATIONAL AIRPORT                              
+29.54 -98.47   1001.8 27/0751   360/030  26/1744   010/046 26/1613  
+
+KRND-RANDOLPH AFB                                                   
+29.54 -98.28   1001.3 27/0756   010/028  26/1652   350/050 26/1626  
+
+KBAZ-NEW BRAUNFELS MUNICIPAL AIRPORT                                
+29.70 -98.05   1000.8 26/2251   020/038  27/0025   020/050 26/1557  
+
+KHYI-SAN MARCOS                                                     
+29.90 -97.87   1002.0 26/2256   020/036  27/0132   010/048 27/0120  
+
+KAUS-AUSTIN BERGSTROM INTERNATIONAL AIRPORT                         
+30.18 -97.68   1003.6 27/0753   030/039  27/0302   030/047 27/0046  
+
+KATT-AUSTIN CAMP MABRY                                              
+30.32 -97.77   1005.7 27/0751   030/020  27/1729   360/039 27/1736  
+
+KGTU-GEORGETOWN                                                     
+30.69 -97.69   1009.2 27/1139   050/024  27/1340   060/035 27/1135  
+
+KHDO-HONDO MUNICIPAL AIRPORT                                        
+29.36 -99.16   1005.8 27/0851   020/033  27/1559   010/044 27/1558  
+
+KT82-FREDERICKSBURG                                                 
+30.24 -98.91   1008.2 27/0815   010/027  26/2315   010/035 26/2315  
+
+KDZB-HORSESHOE BAY                                                  
+30.52 -98.36   1008.4 27/0815   030/014  26/2255   060/025 27/1735  
+
+KBMQ-BURNET MUNICIPAL AIRPORT                                       
+30.74 -98.23   1008.9 27/0953   030/023  26/1823   050/034 27/0601  
+
+KDRT-DEL RIO INTERNATIONAL AIRPORT                                  
+29.38 -100.92  1009.0 26/0153   010/020  26/2159   360/031 26/2158  
+
+KDLF-LAUGHLIN AFB                                                   
+29.38 -100.78  1007.4 25/2304   030/020  26/2156   350/031 26/2012  
+
+KUVA-UVALDE                                                         
+29.21 -99.74   1008.4 27/0935   350/021  26/1835   360/033 26/2235  
+
+REMARKS: 
+
+
+NON-METAR OBSERVATIONS... 
+NOTE: ANEMOMETER HEIGHT IN METERS AND WIND AVERAGING PERIOD IN
+MINUTES INDICATED UNDER MAXIMUM SUSTAINED WIND IF KNOWN
+---------------------------------------------------------------------
+LOCATION  ID    MIN    DATE/     MAX      DATE/     PEAK    DATE/
+LAT  LON        PRES   TIME      SUST     TIME      GUST    TIME
+DEG DECIMAL     (MB)   (UTC)     (KT)     (UTC)     (KT)    (UTC)
+---------------------------------------------------------------------
+KTXYORK4                                                           
+29.03 -97.53    991.2 26/1647   360/021  26/1500   999/035 26/9999  
+                                 99/99
+
+KTXYORK6                                                           
+28.91 -97.50   9999.0 99/9999 I 999/040  26/9999 I 999/042 26/9999 I
+                                 99/99
+
+KTXSMILE3                                                          
+29.12 -97.62   9999.0 99/9999 I 010/027  26/1516   030/044 26/0917  
+                                 99/99
+
+KTXSMILE2                                                          
+29.29 -97.57   9999.0 99/9999 I 999/040  26/9999 I 999/050 26/9999 I
+                                 99/99
+
+KTXCUERO3                                                          
+29.09 -97.23    989.2 26/1540   999/999  99/9999 I 999/999 99/9999 I
+                                 99/99
+
+KTXCUERO1                                                          
+29.15 -97.30    992.6 26/1435 I 030/023  26/1415 I 060/036 26/1235 I
+                                 99/99
+
+REMARKS: 
+
+
+
+B. MARINE OBSERVATIONS...
+NOTE: ANEMOMETER HEIGHT IN METERS AND WIND AVERAGING PERIOD IN
+MINUTES INDICATED UNDER MAXIMUM SUSTAINED WIND IF KNOWN
+---------------------------------------------------------------------
+LOCATION  ID    MIN    DATE/     MAX      DATE/     PEAK    DATE/
+LAT  LON        PRES   TIME      SUST     TIME      GUST    TIME
+DEG DECIMAL     (MB)   (UTC)     (KT)     (UTC)     (KT)    (UTC)
+---------------------------------------------------------------------
+
+
+C. STORM TOTAL RAINFALL FROM 1200 UTC AUG 25 UNTIL 1200 UTC AUG 29
+---------------------------------------------------------------------
+CITY/TOWN                    COUNTY               ID         RAINFALL
+LAT LON                                                       (IN)   
+DEG DECIMAL
+---------------------------------------------------------------------
+10.2 NW LA GRANGE            FAYETTE             TX-FY-3      29.19  
+29.90  -96.88
+
+2 NE MULDOON                 FAYETTE             LCRA5608     26.71  
+29.81  -97.07
+
+LA GRANGE                    FAYETTE             LCRA5599     26.15  
+29.90  -96.88
+
+7.8 NNE LA GRANGE            FAYETTE             TX-FY-30     25.78  
+29.90  -96.88
+
+1.0 SSW CARMINE              FAYETTE             LCRA5691     25.26  
+30.14  -96.69
+
+3.5 SW LA GRANGE             FAYETTE             TX-FY-52     23.92  
+29.90  -96.88
+
+SMITHVILLE                   BASTROP             LCRA5541     23.61  
+30.00  -97.16
+
+3.6 ESE CIRCLE D-KC ESTA     BASTROP             TX-BST-9     23.51  
+30.16  -97.23
+
+SMITHVILLE                   BASTROP             SMHT2        23.10  
+30.01  -97.16
+
+5.5 NNE YOAKUM               DEWITT              TX-LV-28     22.99  
+29.29  -97.15
+
+6.7 SE SMITHVILLE            BASTROP             TX-FY-1      21.72  
+30.00  -97.16
+
+4.5 N ROSANKY                BASTROP             TX-BST-2     21.62  
+29.93  -97.30
+
+4 E GIDDINGS                 LEE                 GIDT2        21.06  
+30.19  -96.86
+
+3 E SCHULENBURG              FAYETTE             SCHT2        20.65  
+29.68  -96.86
+
+4.1 NE SHINER                LAVACA              TX-LV-26     20.36  
+29.43  -97.17
+
+1 SSE MOULTON                LAVACA              LCRA7303     20.05  
+29.57  -97.15
+
+3 SSE BASTROP                BASTROP             TX-BST-1     19.50  
+30.11  -97.31
+
+4.6 SW PAIGE                 BASTROP             TX-BST-8     19.20  
+30.21  -97.12
+
+13.2 E GONZALES              GONZALES            TX-GZ-26     19.19  
+29.50  -97.45
+
+4 W LA GRANGE                FAYETTE             K3T5         18.98  
+29.90  -96.88
+
+1 SSE HALLETTSVILLE          LAVACA              LCRA7324     18.61  
+29.44  -96.94
+
+2 N HALLETTSVILLE            LAVACA              HATT2        18.22  
+29.47  -96.94
+
+2 ESE HALLETTSVILLE          LAVACA              TX-LV-29     17.80  
+29.44  -96.94
+
+5.5 SSE MANOR                TRAVIS              TX-TV-12     16.53  
+30.34  -97.56
+
+BASTROP                      BASTROP             LCRA5499     16.48  
+30.11  -97.31
+
+3 SE FEDOR                   LEE                 FEDT2        16.34  
+30.28  -97.02
+
+5 NNW WAELDER                GONZALES            JDDT2        16.25  
+29.77  -97.32
+
+5 SE FLATONIA                FAYETTE             FLTT2        16.07  
+29.63  -97.06
+
+2 NNW CHEAPSIDE              GONZALES            CHPT2        15.81  
+29.31  -97.41
+
+3 WSW GIDDINGS               LEE                 KGYB         15.77  
+30.18  -96.93
+
+3 S GONZALES                 GONZALES            GNOT2        14.92  
+29.47  -97.45
+
+8.8 SW LEXINGTON             LEE                 TX-LE-13     14.91  
+30.41  -97.01
+
+1 NW DIME BOX                LEE                 DBXT2        14.85  
+30.36  -96.83
+
+1 ENE CEDAR CREEK            BASTROP             TX-BST-6     14.83  
+30.08  -97.50
+
+0.6 S GONZALES               GONZALES            TX-GZ-25     14.77  
+29.50  -97.45
+
+6.4 ESE LOCKHART             CALDWELL            TX-CLD-3     14.73  
+29.87  -97.68
+
+2 SW LOCKHART                CALDWELL            LKHT2        13.85  
+29.86  -97.70
+
+7.3 NW GIDDINGS              LEE                 TX-LE-19     13.81  
+30.18  -96.93
+
+1 NW NIXON                   GONZALES            NXNT2        13.70  
+29.28  -97.77
+
+1 NW GONZALES                GONZALES            KT20         13.46  
+29.50  -97.45
+
+6.2 WNW YOAKUM               DEWITT              TX-DW-7      13.34  
+29.29  -97.15
+
+LEXINGTON                    LEE                 LEXT2        13.25  
+30.41  -97.01
+
+1.7 NNW MARTINDALE           CALDWELL            TX-CLD-1     13.07  
+29.84  -97.84
+
+2 NE SPEAKS                  LAVACA              SPKT2        12.62  
+29.27  -96.69
+
+8.6 E BUDA                   HAYS                TX-TV-28     11.98  
+30.08  -97.84
+
+1.9 NW KINGSBURY             GUADALUPE           TX-GP-58     11.84  
+29.65  -97.82
+
+BUDA                         HAYS                LCRA4595     11.68  
+30.08  -97.84
+
+0.7 SW BUDA                  HAYS                TX-HYS-1     11.56  
+30.08  -97.84
+
+0.9 SE LULING                CALDWELL            TX-CLD-4     11.45  
+29.68  -97.65
+
+5 S FENTRESS                 GUADALUPE           KINT2        11.33  
+29.68  -97.77
+
+1 WSW LULING                 CALDWELL            LUUT2        11.23  
+29.68  -97.66
+
+2.7 ESE CUERO                DEWITT              TX-DW-14     11.15  
+29.09  -97.29
+
+5 E SUNSET VALLEY            TRAVIS              ASNT2        11.00  
+30.23  -97.73
+
+0.9 NW ELGIN                 BASTROP             TX-BST-4     10.87  
+30.34  -97.37
+
+2.8 WSW SAN MARCOS           HAYS                TX-HYS-1     10.46  
+29.88  -97.93
+
+10.50 SSE THRALL             WILLIAMSON          TX-WM-48     10.44  
+30.58  -97.30
+
+6 SW GONZALES                GONZALES            GNZT2        10.32  
+29.44  -97.52
+
+ELGIN                        BASTROP             ELGT2        10.21  
+30.35  -97.37
+
+8 SE AUSTIN                  TRAVIS              KAUS         10.07  
+30.30  -97.75
+
+3 W CUERO                    DEWITT              CURT2         9.75  
+29.09  -97.34
+
+BLANCO                       BLANCO              LCRA0817      9.29  
+30.09  -98.42
+
+0.6 SE SEGUIN                GUADALUPE           TX-GP-11      9.03  
+29.57  -97.97
+
+0.7 WNW YORKTOWN             DEWITT              TX-DW-18      9.02  
+28.98  -97.50
+
+0.5 N PFLUGERVILLE           TRAVIS              TX-TV-29      8.84  
+30.44  -97.62
+
+0.5 ENE MCQUEENEY            GUADALUPE           TX-GP-34      8.46  
+29.59  -98.04
+
+6.4 N STOCKDALE              WILSON              TX-WO-26      8.30  
+29.23  -97.96
+
+3.3 SE ROUND ROCK            WILLIAMSON          TX-WM-25      8.25  
+30.51  -97.67
+
+1 N AUSTIN                   TRAVIS              TX-TV-44      8.01  
+30.30  -97.75
+
+2 NW AUSTIN                  TRAVIS              KATT          7.97  
+30.30  -97.75
+
+0.6 SSE DRIPPING SPRINGS     HAYS                TX-HYS-1      7.32  
+30.18  -98.09
+
+4 E NEW BRAUNFELS            COMAL               KBAZ          7.03  
+29.70  -98.12
+
+3.0 E LA VERNIA              WILSON              TX-WO-54      7.02  
+29.35  -98.11
+
+1.9 WSW WIMBERLEY            HAYS                TX-HYS-1      6.94  
+29.99  -98.10
+
+1.1 NNW TAYLOR               WILLIAMSON          TX-WM-24      6.92  
+30.57  -97.41
+
+0.1 ENE NEW BRAUNFELS        COMAL               TX-CML-4      6.43  
+29.70  -98.12
+
+3 SSW JOLLYVILLE             TRAVIS              AGHT2         6.19  
+30.41  -97.77
+
+2 SSE NEW BRAUNFELS          COMAL               TX-GP-31      6.11  
+29.70  -98.12
+
+12.6 WSW KARNES CITY         KARNES              TX-KS-3       5.87  
+28.88  -97.90
+
+1.0 ESE CEDAR PARK           WILLIAMSON          TX-WM-41      5.39  
+30.51  -97.83
+
+2.50 ENE BEE CAVE            TRAVIS              TX-TV-99      5.06  
+30.30  -97.95
+
+1.30 WNW GEORGETOWN          WILLIAMSON          TX-WM-4       4.97  
+30.64  -97.69
+
+5.0 SSW MARION               GUADALUPE           TX-GP-11      4.89  
+29.57  -98.14
+
+4.3 ENE HOLLYWOOD PARK       BEXAR               TX-BXR-1      4.67  
+29.59  -98.48
+
+3 NNW GEORGETOWN             WILLIAMSON          KGTU          4.59  
+30.68  -97.71
+
+14 NE SAN ANTONIO            BEXAR               KRND          4.23  
+29.45  -98.50
+
+2.2 N SCHERTZ                BEXAR               TX-GP-29      3.73  
+29.55  -98.26
+
+2.6 SW LAKEWAY               TRAVIS              TX-TV-29      3.72  
+30.36  -97.98
+
+0.8 SSW LIVE OAK             BEXAR               TX-BXR-2      3.59  
+29.55  -98.34
+
+0.8 SSE SPRING BRANCH        COMAL               TX-CML-1      3.41  
+29.86  -98.40
+
+1.2 SSE JARRELL              WILLIAMSON          TX-WM-22      3.39  
+30.79  -97.59
+
+0.8 NNE ELMENDORF            BEXAR               TX-BXR-3      3.29  
+29.25  -98.33
+
+1.1 NW GARDEN RIDGE          COMAL               TX-CML-1      3.25  
+29.63  -98.29
+
+2.2 N JOHNSON CITY           BLANCO              TX-BLC-1      3.16  
+30.27  -98.41
+
+9.1 NE PLEASANTON            ATASCOSA            TX-AT-25      2.28  
+28.96  -98.49
+
+1.9 E KENDALIA               KENDALL             TX-KN-23      2.25  
+29.96  -98.52
+
+0.7 NW CASTLE HILLS          BEXAR               TX-BXR-2      2.00  
+29.52  -98.52
+
+6 NNE SAN ANTONIO            BEXAR               KSAT          1.94  
+29.45  -98.50
+
+4.1 N POTEET                 ATASCOSA            TX-AT-1       1.66  
+29.03  -98.58
+
+1.0 ENE HELOTES              BEXAR               TX-BXR-1      1.63  
+29.56  -98.69
+
+8 S SAN ANTONIO              BEXAR               KSSF          1.49  
+29.45  -98.50
+
+0.7 NW MARBLE FALLS          BURNET              TX-BRT-5      1.29  
+30.57  -98.27
+
+6 SSW SAN ANTONIO            BEXAR               KSKF          0.91  
+29.45  -98.50
+
+1 SW PLEASANTON              ATASCOSA            KPEZ          0.85  
+28.96  -98.49
+
+2 SW FREDERICKSBURG          GILLESPIE           KT82          0.73  
+30.24  -98.89
+
+2 E UVALDE                   UVALDE              KUVA          0.30  
+29.21  -99.78
+
+2 NNE LLANO                  LLANO               KAQO          0.12  
+30.75  -98.67
+
+3 W DEL RIO                  VAL VERDE           KDRT          0.03  
+29.37 -100.89
+
+3 E DEL RIO                  VAL VERDE           KDLF          0.01  
+29.37 -100.89
+
+REMARKS: 
+
+
+
+D. INLAND FLOODING...
+---------------------------------------------------------------------
+BASTROP...NUMEROUS LOW WATER CROSSINGS UNDERWATER LEADING TO
+MULTIPLE WATER RESCUES. SEVERAL HOMES HAD WATER DAMAGE. SEE SECTION
+G - STORM IMPACTS FOR FURTHER DETAILS.
+
+BEXAR...A FEW LOW WATER CROSSINGS WERE FLOODING. SEE SECTION G -
+STORM IMPACTS FOR FURTHER DETAILS.
+
+CALDWELL...NUMEROUS FLOODED AND DAMAGED ROADS ACROSS THE COUNTY.
+DAMAGE TO SEVERAL DAMS AND HOMES. SEE SECTION G - STORM IMPACTS FOR
+FURTHER DETAILS.
+
+COMAL...SEVERAL LOW WATER CROSSINGS WERE FLOODED ACROSS THE COUNTY.
+SEE SECTION G - STORM IMPACTS FOR FURTHER DETAILS.
+
+DEWITT...MAJOR FLOODING FROM THE GUADALUPE RIVER CAUSED MULTIPLE
+HOMES TO FLOOD IN CUERO. THE GUADALUPE RIVER NEAR CUERO CRESTED AT
+ITS SECOND HIGHEST CREST ON RECORD. NUMEROUS HOMES MAY HAVE ALSO
+BEEN FLOODED DOWNSTREAM OF CUERO. SEE SECTION G - STORM IMPACTS FOR
+FURTHER DETAILS.    
+
+FAYETTE...THE COLORADO RIVER ABOVE LA GRANGE CRESTED AT ITS 3RD
+HIGHEST CREST EVER AND THE HIGHEST SINCE 1913. NUMEROUS HOMES WERE
+IMPACTED BY FLOODING ACROSS THE COUNTY, ALONG WITH SEVERAL
+DESTROYED. SEE SECTION G - STORM IMPACTS FOR FURTHER DETAILS.
+
+GONZALES...FLOOD DAMAGE TO HOMES WAS LIMITED. SEVERAL ROADS WERE
+FLOODED IN THE COUNTY. SEE SECTION G - STORM IMPACTS FOR FURTHER
+DETAILS.
+
+HAYS... MANY LOW WATER CROSSINGS FLOODED DURING THE EVENT. SEE
+SECTION G - STORM IMPACTS FOR FURTEHR DETAILS.
+
+LAVACA...THE NAVIDAD RIVER REACHED RECORD HEIGHTS AT BOTH SUBLIME
+AND NEAR SPEAKS TX. SOME IMPACT TO AREA ROADS DUE TO HIGH WATER. SEE
+SECTION G - STORM IMPACTS FOR FURTHER DETAILS.
+
+LEE...SEVERAL HOMES IMPACTED BY FLOODING WITH A HANDFULL DETROYED.
+SEE SECTION G - STORM IMPACTS FOR FURTHER DETAILS.
+
+WILSON...EAST SIDE OF THE COUNTY HAD THE MOST RAINFALL AND A FEW
+ROAD ISSUES OCCURRED AS A RESULT. SEE SECTION G - STORM IMPACTS FOR
+FURTHER DETAILS.
+
+GUADALUPE...SOME ROADS AND LOW WATER CROSSINGS WERE FLOODED. SEE
+SECTION G - STORM IMPACTS FOR FURTHER DETAILS.
+
+---------------------------------------------------------------------
+
+E. MAXIMUM STORM SURGE AND STORM TIDE...
+OFFICIAL TIDE GAUGES NOTED WITH LEADING G
+---------------------------------------------------------------------
+
+COUNTY           CITY/TOWN        SURGE   TIDE   DATE/   BEACH       
+                 OR LOCATION      (FT)    (FT)   TIME    EROSION     
+---------------------------------------------------------------------
+
+
+F. TORNADOES...
+---------------------------------------------------------------------
+(DIST)CITY/TOWN              COUNTY           DATE/         EF SCALE 
+LAT LON (DEG DECIMAL                          TIME(UTC)    (IF KNOWN)
+DESCRIPTION                                                          
+---------------------------------------------------------------------
+
+
+G. STORM IMPACTS BY COUNTY...
+---------------------------------------------------------------------
+
+COUNTY            DEATHS           INJURIES             EVACUATIONS  
+DESCRIPTION
+---------------------------------------------------------------------
+ATASCOSA             0                 0                     0    
+
+BASTROP              0                 0                     100  
+
+100 PEOPLE EVACUATED. WIDESPREAD 15+ INCHES OF RAIN FELL AND PUT
+OVER 150 LOW WATER CROSSINGS UNDERWATER AT ONE POINT. THIS HAS
+LIKELY DAMAGED OVER 50 ROADS. EARLY INDICATIONS SHOW 40 HOMES
+PROBABLY HAVE WATER DAMAGE BUT ASSESSMENT TEAMS ARE STILL GETTING
+PUT TOGETHER. SOME TREES WERE DOWNED ACROSS THE COUNTY AND LED TO
+SOME POWER OUTAGES. MULTIPLE WATER RESCUES WERE MADE. 
+
+BEXAR                0                 0                     0    
+
+A FEW TREES DOWNED ON THE EAST SIDE OF THE COUNTY. NO MAJOR WATER
+ISSUES EXPCEPT FOR A FEW LOW WATER CROSSINGS THAT WERE FLOODED FROM
+SEVERAL INCHES OF RAIN. A FEW ROADS WERE CLOSED DUE TO HIGH WATER. 
+
+CALDWELL             0                 0                     8    
+
+8 PEOPLE EVACUATED DOWNSTREAM OF A DAM. 100S OF ROADS CLOSED ACROSS
+THE COUNTY DUE TO FLOODING WITH ESTIMATES OF MILLIONS OF DOLLARS IN
+DAMAGE TO THE ROAD INFRASTRUCTURE. THERE WAS DAMAGE TO 10 DAMS. WIND
+DAMAGE WAS REPORTED ACROSS THE COUNTY MAINLY TO TREES AND SMALL
+STRUCTURES AS WIND GUSTED WELL OVER 50 MPH. EARLY ESTIMATES
+INDICATED AS MANY AS 50 HOMES EXPERIENCED FLOOD DAMAGE. MULTIPLE
+WATER RESCUES WERE MADE. 
+
+COMAL                0                 0                     0    
+
+WIND GUSTS WELL OVER 50 MPH BROUGHT MULTIPLE TREES DOWN ACROSS THE
+COUNTY AND LED TO SCATTERED POWER OUTAGES. AT ONE POINT 15K
+CUSTOMERS WERE WITHOUT POWER BUT THE OUTAGES WERE SPORADIC AND
+DIDN'T LAST VERY LONG. SEVERAL LOW WATER CROSSINGS WERE FLOODED
+ACROSS THE COUNTY THAT LASTED FOR A FEW DAYS AS THE WATERS WERE SLOW
+TO RECEDE. ONE COUNTY BUILDING SUSTAINED WATER DAMAGE DUE TO THE
+WIND-BLOWN RAIN. ESTIMATES OF DAMAGE TO THE BUILDING IS 10K. AT ONE
+POINT COMAL COUNTY DID HOST 268 EVACUEES FROM THE MIDDLE TEXAS
+COAST. 
+
+DEWITT               0                 0                     300  
+
+300 PEOPLE EVACUATED. LARGE TREES DOWNED ACROSS THE COUNTY WITH SOME
+STRUCTURAL DAMAGE ALSO NOTED ON SOME BUILDINGS AND HOMES. WINDS
+GUSTED WELL OVER 60 MPH ACROSS MUCH OF THE COUNTY AS THE CENTER OF
+HARVEY MOVED OVER AND NEAR THE CITY OF CUERO. FLOODING FROM THE
+GUADALUPE RIVER CAUSED MULTIPLE HOMES TO FLOOD IN CUERO AS WELL AS
+10 MILES DOWNSTREAM OF CUERO. AS MANY AS 100 HOMES WERE AFFECTED BY
+HIGH WATER. THE GUADALUPE RIVER NEAR CUERO CRESTED AT 44.36 FEET,
+ITS SECOND HIGHEST CREST ON RECORD. 
+
+FAYETTE              0                 0                     400  
+
+400 PEOPLE EVACUATED. WIDESPREAD 20+ INCHES OF RAIN FELL ACROSS MOST
+OF FAYETTE COUNTY. THE COLORADO RIVER CRESTED AT JUST OVER 54 FEET
+MAKING IT THE 3RD HIGHEST CREST EVER AND THE HIGHEST SINCE 1913.
+THERE ARE LIKELY 500 IMPACTED HOMES ACROSS THE COUNTY WITH SEVERAL
+DESTROYED ALONG THE COLORADO RIVER AT LA GRANGE AND ALONG BUCKNER'S
+CREEK IN FRISCH AUF VALLEY COUNTRY CLUB. FLOODED ROADS ARE EXTENSIVE
+ACROSS THE COUNTY WITH LIKELY AT LEAST 500K IN DAMAGE TO ROAD
+INFRASTRUCTURE. POWER AND CELL SERVICE IN LA GRANGE WERE IMPACTED.
+MULTIPLE BUSINESSES ALONG THE RIVER BELOW WATER STREET IN LAGRANGE
+TOOK ON WATER AND ARE EITHER DESTROYED OR HAVE MAJOR DAMAGE. 
+
+GONZALES             0                 0                     0    
+
+SIGNIFICANT FLOODING OCCURRED ON PEACH CREEK WHERE WIDESPREAD 10-15
+INCHES OF RAIN FELL, BUT OVERALL FLOOD DAMAGE WAS LIMITED TO 2
+HOUSES. OVER 20 ROADS WERE FLOODED. WIDESPREAD WIND DAMAGE TO MAINLY
+TREES WAS REPORTED WITH MANY TREES UPROOTED ACROSS THE ENTIRE
+COUNTY. WIND GUSTS OVER 50 MPH WERE REPORTED. 
+
+HAYS                 0                 0                     100  
+
+100 PEOPLE EVACUATED. THERE WAS A SINKHOLE ON HIGHWAY 21 ON THE
+CALDWELL/HAYS COUNTY LINE BUT NO OTHER ROAD ISSUES REPORTED EXCEPT
+FOR MANY LOW WATER CROSSINGS FLOODED DURING THE EVENT. THERE WERE
+SEVERAL AREAS THAT EXPERIENCED POWER OUTAGES DUE TO DOWNED TREES,
+LIMBS, AND POWERLINES. 
+
+KARNES               0                 0                     0    
+
+SEVERAL TREES DOWNED ACROSS THE EASTERN HALF OF THE COUNTY BUT
+OVERALL IMPACTS WERE LIGHT. 
+
+LAVACA               0                 0                     0    
+
+SEVERAL TREES DOWNED ACROSS THE COUNTY AS WELL AS SOME MINOR
+STRUCTURAL DAMAGE NOTED IN YOAKUM AND SHINER. THE NAVIDAD RIVER
+REACHED RECORD HEIGHTS AT BOTH SUBLIME AND NEAR SPEAKS TX. THE HIGH
+WATER MAINLY AFFECTED MOSTLY FLOODPLAIN AREAS AND NO STRUCTURES WERE
+DIRECTLY IMPACTED. SOME IMPACT TO AREA ROADS DUE TO HIGH WATER. 
+
+LEE                  0                 0                     0    
+
+THE HEAVY RAINFALL ACROSS ESPECIALLY THE SOUTHERN HALF OF THE COUNTY
+HAS LIKELY BROUGHT IMPACTS TO AT LEAST 30 HOMES WITH AS MANY AS 25
+POSSIBLY DESTROYED. SOME TREES DOWN ACROSS THE COUNTY. 
+
+WILSON               0                 0                     0    
+
+EAST SIDE OF THE COUNTY HAD THE MOST RAINFALL AND A FEW ROAD ISSUES
+OCCURRED AS A RESULT. OVERALL IMPACTS WERE LIGHT ALTHOUGH ONE WATER
+RESCUE DID TAKE PLACE ON THE FAR EAST SIDE OF THE COUNTY. 
+
+GUADALUPE            0                 0                     0    
+
+CENTRAL AND EASTERN AREAS OF THE COUNTY HAD THE MOST RAIN, WHERE
+BETWEEN 6 AND 12 INCHES OF RAIN FELL. SOME ROADS AND LOW WATER
+CROSSINGS WERE FLOODED. WIND GUSTS UP TO 60 MPH PRODUCED SCATTERED
+TREE DAMAGE AND POWER OUTAGES. 
+
+$$
+
+Legend:
+I-Incomplete Data
+E-Estimated
+
+RUNYEN
+
+
+
+
