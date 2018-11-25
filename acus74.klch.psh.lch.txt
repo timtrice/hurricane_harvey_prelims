@@ -1,0 +1,190 @@
+ACUS74 KLCH 191804
+PSHLCH
+
+POST TROPICAL CYCLONE REPORT...HURRICANE NATE
+NATIONAL WEATHER SERVICE LAKE CHARLES LA
+104 PM CDT THU OCT 19 2017
+
+
+NOTE: THE DATA SHOWN HERE ARE PRELIMINARY....AND SUBJECT TO UPDATES
+AND CORRECTIONS AS APPROPRIATE.
+
+THIS REPORT INCLUDES EVENTS OCCURRING WHEN WATCHES AND/OR WARNINGS
+WERE IN EFFECT...OR WHEN SIGNIFICANT FLOODING ASSOCIATED WITH NATE
+OR ITS REMNANTS WAS AFFECTING THE AREA.
+
+COUNTIES INCLUDED...LAFAYETTE...ST. MARTIN...ST. MARY...IBERIA...
+VERMILION
+
+
+
+
+
+
+A. LOWEST SEA LEVEL PRESSURE/MAXIMUM SUSTAINED WINDS AND PEAK GUSTS
+---------------------------------------------------------------------
+METAR OBSERVATIONS...
+NOTE: ANEMOMETER HEIGHT IS 10 METERS AND WIND AVERAGING IS 2 MINUTES
+---------------------------------------------------------------------
+LOCATION  ID    MIN    DATE/     MAX      DATE/     PEAK    DATE/
+LAT  LON        PRES   TIME      SUST     TIME      GUST    TIME
+DEG DECIMAL     (MB)   (UTC)     (KT)     (UTC)     (KT)    (UTC)
+---------------------------------------------------------------------
+KARA-NEW IBERIA/ACADIANA REGIONAL AIRPORT                           
+30.03 -91.88   1004.1 07/2253   100/020  07/2140   080/026 07/2135  
+
+KP92-SALT POINT                                                     
+29.56 -91.53   1003.1 07/2353   110/006  07/1353                    
+
+KIYA-ABBEVILLE/CHRIS CRUSTA MEMORIAL AIRPORT                        
+29.98 -92.08   1003.4 07/2135   090/009  07/1735   090/015 07/2216  
+
+REMARKS: 
+
+NON-METAR OBSERVATIONS... 
+NOTE: ANEMOMETER HEIGHT IN METERS AND WIND AVERAGING PERIOD IN
+MINUTES INDICATED UNDER MAXIMUM SUSTAINED WIND IF KNOWN
+---------------------------------------------------------------------
+LOCATION  ID    MIN    DATE/     MAX      DATE/     PEAK    DATE/
+LAT  LON        PRES   TIME      SUST     TIME      GUST    TIME
+DEG DECIMAL     (MB)   (UTC)     (KT)     (UTC)     (KT)    (UTC)
+---------------------------------------------------------------------
+
+
+B. MARINE OBSERVATIONS...
+NOTE: ANEMOMETER HEIGHT IN METERS AND WIND AVERAGING PERIOD IN
+MINUTES INDICATED UNDER MAXIMUM SUSTAINED WIND IF KNOWN
+---------------------------------------------------------------------
+LOCATION  ID    MIN    DATE/     MAX      DATE/     PEAK    DATE/
+LAT  LON        PRES   TIME      SUST     TIME      GUST    TIME
+DEG DECIMAL     (MB)   (UTC)     (KT)     (UTC)     (KT)    (UTC)
+---------------------------------------------------------------------
+FRWL1-FRESHWATER CANAL LOCKS                                        
+29.55  -92.31  1003.6 07/2218   090/013  07/2124   090/021 07/2124  
+                                   
+ 
+AMRL1-AMERADA PASS                                                  
+29.45  -91.34  1003.2 07/2354   090/016  07/1900   090/022 07/1906  
+                                   
+ 
+TESL1-BERWICK                                                       
+29.67  -91.24  1003.5 08/0054   050/013  07/1824   120/020 07/1148  
+                                   
+ 
+EINL1-NORTH OF EUGENE ISLAND                                        
+29.37  -91.38  1002.7 08/0006   130/024  07/1900   130/033 07/1900  
+                                   
+ 
+TXPT2-TEXAS POINT                                                   
+29.69  -93.84  1003.7 07/2230   090/020  05/0442   090/023 05/0448  
+                                   
+ 
+SBPT2-SABINE PASS NORTH                                             
+29.73  -93.87  1005.9 07/2242   090/014  05/1642   090/020 06/1706  
+                                   
+ 
+PORT2-PORT ARTHUR                                                   
+29.87  -93.93  1004.8 08/2106   110/009  05/0624   110/014 05/0624  
+                                   
+ 
+CAPL1-CALCASIEU PASS                                                
+29.77  -93.34  1003.2 08/0006   130/016  06/0554   130/020 060/055  
+                                   
+ 
+LCLL1-LAKE CHARLES                                                  
+30.22  -93.22  1003.6 07/2354   999/999  99/9999   999/999 99/9999  
+                                   
+ 
+REMARKS: 
+
+
+
+C. STORM TOTAL RAINFALL FROM 1200 UTC OCT 07 UNTIL 1200 UTC OCT 08
+---------------------------------------------------------------------
+CITY/TOWN                    COUNTY               ID         RAINFALL
+LAT LON                                                       (IN)   
+DEG DECIMAL
+---------------------------------------------------------------------
+MORGAN CITY                  ST. MARY            MRCL1         1.37  
+29.68  -91.18
+
+FRANKLIN 3 NW                ST. MARY            FRAL1         0.55  
+29.82  -91.54
+
+JEANERETTE 5 NW              IBERIA              JENL1         0.27  
+29.95  -91.71
+
+ACADIANA REGIONAL AIRPOR     IBERIA              KARA          0.11  
+30.03  -91.88
+
+ABBEVILLE                    VERMILION           ABBL1         0.01  
+29.96  -92.12
+
+REMARKS: 
+
+
+D. INLAND FLOODING...
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+E. MAXIMUM STORM SURGE AND STORM TIDE...
+OFFICIAL TIDE GAUGES NOTED WITH LEADING G
+---------------------------------------------------------------------
+
+COUNTY           CITY/TOWN        SURGE   TIDE   DATE/   BEACH       
+                 OR LOCATION      (FT)    (FT)   TIME    EROSION     
+---------------------------------------------------------------------
+VERMILION      G FRESHWATER LOCK   1.73   4.20  07/2142    MINOR   
+
+ST. MARY       G AMERADA PASS      1.78   3.09  08/0912    MINOR   
+
+ST. MARY       G BERWICK           1.14   0.72  08/1136     NONE   
+
+ST. MARY       G EUGENE ISLAND     1.80   3.65  07/2224    MINOR   
+
+JEFFERSON      G TEXAS POINT, TX   1.92   4.27  07/2218    MINOR   
+
+JEFFERSON      G SABINE PASS NOR   1.71   3.72  07/2230    MINOR   
+
+JEFFERSON      G PORT ARTHUR, TX   1.93   3.08  07/1118     NONE   
+
+CAMERON        G CALCASIEU PASS,   1.48   3.83  07/2224    MINOR   
+
+CALCASIEU      G BULK TERMINAL,    2.04   3.15  08/0300     NONE   
+
+CALCASIEU      G LAKE CHARLES, L   1.63   3.22  08/0300     NONE   
+
+
+REMARKS: HIGHER TIDES OF 1.0 TO 2.0 FEET ABOVE NORMAL WERE OBSERVED
+FROM SOUTH CENTRAL LOUISIANA TO SOUTHEAST TEXAS COAST AND FURTHER
+INLAND LAKES AND BAYS FROM OCTOBER 3-8 DUE TO PROLONGED MODERATE
+EASTERLY FLOW ACROSS THE GULF OF MEXICO BEFORE HURRICANE NATE'S
+ARRIVAL.
+
+
+
+F. TORNADOES...
+---------------------------------------------------------------------
+(DIST)CITY/TOWN              COUNTY           DATE/         EF SCALE 
+LAT LON (DEG DECIMAL                          TIME(UTC)    (IF KNOWN)
+DESCRIPTION                                                          
+---------------------------------------------------------------------
+
+
+G. STORM IMPACTS BY COUNTY...
+---------------------------------------------------------------------
+
+COUNTY            DEATHS           INJURIES             EVACUATIONS  
+DESCRIPTION
+---------------------------------------------------------------------
+$$
+
+Legend:
+I-Incomplete Data
+E-Estimated
+
+LANDRENEAU
+
+
+
+

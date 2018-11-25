@@ -1,0 +1,376 @@
+ACUS74 KBRO 011745 CCC
+PSHBRO
+
+POST TROPICAL CYCLONE REPORT...HURRICANE HARVEY...CORRECTED
+NATIONAL WEATHER SERVICE BROWNSVILLE TX
+1245 PM CDT FRI SEP 1 2017
+
+
+NOTE: THE DATA SHOWN HERE ARE PRELIMINARY....AND SUBJECT TO UPDATES
+AND CORRECTIONS AS APPROPRIATE.
+
+THIS REPORT INCLUDES EVENTS OCCURRING WHEN WATCHES AND/OR WARNINGS
+WERE IN EFFECT...OR WHEN SIGNIFICANT FLOODING ASSOCIATED WITH HARVEY
+
+COUNTIES INCLUDED...COASTAL CAMERON...CAMERON...COASTAL WILLACY...
+WILLACY...BROOKS...KENEDY
+
+
+AUG 29...CORRECTED FOR...DATE OF MARINE BUOY 42020 PEAK GUST AND
+TYPOGRAPHICAL ERRORS IN RAINFALL LOCATIONS AND REMARKS SECTIONS.
+
+AUG 30...CORRECTED FOR...ADDED PORT ISABEL MARINE WIND AND GUST AND
+ADJUSTED GUST AT BRAZOS SANTIAGO PASS. ADJUSTED PEAK STORM SURGE AND
+TIDE TO HIGHEST VALUE FOR EVENT WHICH OCCURRED AFTER TROPICAL STORM
+WARNINGS WERE CANCELLED.
+
+SEP 01...CORRECTED FOR...DATE/TIME FORMAT CHANGED FROM XXXX/XXXX TO
+XX/XXXX TO ACCOUNT FOR HOURS AND MINUTES FOR METAR AND MARINE
+OBSERVATIONS.  ALSO AMENDED MARINE ANEMOMETER WIND SENSOR HEIGHTS
+AND FREQUENCY OF OBSERVATIONS TO ALL LISTED LOCATIONS.
+
+
+
+
+
+
+A. LOWEST SEA LEVEL PRESSURE/MAXIMUM SUSTAINED WINDS AND PEAK GUSTS
+---------------------------------------------------------------------
+METAR OBSERVATIONS...
+NOTE: ANEMOMETER HEIGHT IS 10 METERS AND WIND AVERAGING IS 2 MINUTES
+---------------------------------------------------------------------
+LOCATION  ID    MIN    DATE/     MAX      DATE/     PEAK    DATE/
+LAT  LON        PRES   TIME      SUST     TIME      GUST    TIME
+DEG DECIMAL     (MB)   (UTC)     (KT)     (UTC)     (KT)    (UTC)
+---------------------------------------------------------------------
+KBRO-BROWNSVILLE INTL ARPT                                          
+25.91 -97.42   1002.9 25/1153   300/022  25/1853   290/032 25/1753  
+
+KHRL-HARLINGEN VALLEY INTL ARPT                                     
+26.22 -97.66   1003.6 25/1252   310/023  25/1841   310/033 25/1852  
+
+KPIL-PORT ISABEL ARPT                                               
+26.15 -97.23   1001.9 25/1253   300/024  25/1553   300/034 25/1453  
+
+KBKS-BROOKS COUNTY ARPT                                             
+26.20 -98.12   1002.2 26/0215   290/019  26/0215   290/027 26/0215  
+
+REMARKS: ONLY BAYVIEW (KPIL) REACHED TROPICAL STORM FORCE WINDS ON
+ASOS/AWOS OBSERVATIONS IN WARNING AREA.  
+
+
+NON-METAR OBSERVATIONS... 
+NOTE: ANEMOMETER HEIGHT IN METERS AND WIND AVERAGING PERIOD IN
+MINUTES INDICATED UNDER MAXIMUM SUSTAINED WIND IF KNOWN
+---------------------------------------------------------------------
+LOCATION  ID    MIN    DATE/     MAX      DATE/     PEAK    DATE/
+LAT  LON        PRES   TIME      SUST     TIME      GUST    TIME
+DEG DECIMAL     (MB)   (UTC)     (KT)     (UTC)     (KT)    (UTC)
+---------------------------------------------------------------------
+KTXS33                                                             
+26.13 -97.17   1003.0 25/2240   999/999  99/9999   999/999 99/9999  
+                                      
+KTXPTI4                                                            
+26.11 -97.31   1001.0 25/1305   360/022  25/1642   360/026 25/1532  
+                                      
+KTXBRO22                                                           
+25.92 -97.52   1003.4 25/1312   280/010  25/1643   300/020 25/1537  
+                                      
+KTXSANB2                                                           
+26.11 -97.49   1001.3 25/1202   290/020  25/2042   290/026 25/1458  
+                                      
+TXHRLI6                                                            
+26.17 -97.66   1003.4 25/1256   999/999  99/9999   999/999 99/9999  
+                                      
+KTXHRLI3                                                           
+26.22 -97.68   1005.4 25/1310   999/999  99/9999   999/999 99/9999  
+                                      
+KTXHRLI7                                                           
+26.17 -97.75   1002.7 25/1303   999/999  99/9999   999/999 99/9999  
+                                      
+KTXLAFE2                                                           
+26.14 -97.87   1003.1 25/1308   290/020  25/2052   290/025 25/2012  
+                                      
+KTXPTM5                                                            
+26.55 -97.42   1001.4 25/1851   270/018  25/1819   270/023 25/1808  
+                                      
+KTXENCI3                                                           
+26.84 -98.18   1002.0 25/1233   315/011  25/2136   280/017 26/0326  
+                                      
+KTXENCI5                                                           
+27.02 -98.14   1003.4 26/0102   315/014  25/2243   315/020 25/2243  
+                                      
+KTXRIVE4                                                           
+27.25 -97.89   1000.0 26/0035   290/018  26/0000   315/027 25/2145  
+                                      
+REMARKS: MOST REPORTS ARE FROM WEATHER UNDERGROUND LOCATIONS AND/OR
+APRS/CWOP.
+
+
+
+B. MARINE OBSERVATIONS...
+NOTE: ANEMOMETER HEIGHT IN METERS AND WIND AVERAGING PERIOD IN
+MINUTES INDICATED UNDER MAXIMUM SUSTAINED WIND IF KNOWN
+---------------------------------------------------------------------
+LOCATION  ID    MIN    DATE/     MAX      DATE/     PEAK    DATE/
+LAT  LON        PRES   TIME      SUST     TIME      GUST    TIME
+DEG DECIMAL     (MB)   (UTC)     (KT)     (UTC)     (KT)    (UTC)
+---------------------------------------------------------------------
+42020-BUOY 35NM NE PT MANSFIELD TX                                  
+26.96  -96.70   980.6 25/1850   280/052  25/1850   280/064 25/1850  
+                                   05/10
+ 
+42045-TABS K 40NM E SPI TX                                          
+26.21  -96.50   990.6 25/1330   330/037  25/1400   330/049 25/1400  
+                                   3.4/30
+ 
+PTIT2-PORT ISABEL TX                                                
+26.06  -97.22  1001.2 25/1154   320/021  25/1130   320/031 25/1142  
+                                   8.4/06
+ 
+42044-TABS J 10NM NE SPI TX                                         
+26.19  -97.05  1000.2 25/1100   320/027  25/1130   310/034 25/1400  
+                                   3.4/30
+ 
+RSJT2-RINCON DEL SAN JOSE TX                                        
+26.80  -97.48   999.6 25/1836   310/034  25/1836   310/041 25/1806  
+                                   10/06
+ 
+BABT2-BAFFIN BAY TX                                                 
+27.30  -97.42   995.5 25/2306   999/044  25/2230   999/055 25/2206  
+                                   10/06
+ 
+REAPN-REALITOS PENISULA TX                                          
+26.26  -97.28  1001.6 25/1412   280/028  25/1542   280/036 25/1600  
+                                   10/06
+ 
+SPIT2-SOUTH PADRE ISLAND TX                                         
+26.06  -97.17  1000.9 25/1300   315/032  25/1518   320/040 25/1348  
+                                   10/06
+ 
+BRZT2 - BRAZOS SANTIAGO PASS TX                                     
+26.07  -97.15  1000.1 25/1254   290/032  25/1548   290/038 25/1454  
+                                   10/06
+ 
+REMARKS: NOTE: STRONG GUSTS RETURNED ON MONDAY AUG. 28 WITH
+ELONGATION OF PRESSURE FIELD FROM CYCLONE WELL NORTH. 
+
+
+
+C. STORM TOTAL RAINFALL FROM 1200 UTC AUG 25 UNTIL 0600 UTC AUG 26
+---------------------------------------------------------------------
+CITY/TOWN                    COUNTY               ID         RAINFALL
+LAT LON                                                       (IN)   
+DEG DECIMAL
+---------------------------------------------------------------------
+7 E SARITA                   KENEDY              SRTT2         2.27  
+27.21  -97.69
+
+PORT MANSFIELD               WILLACY             KTXPTMAN      2.05  
+26.55  -97.43
+
+SOUTH PADRE ISLAND           CAMERON             SPIT2         1.80  
+26.07  -97.18
+
+PORT MANSFIELD               WILLACY             PSFT2         1.27  
+26.55  -97.43
+
+LAGUNA VISTA                 CAMERON             KTXPTI4       1.17  
+26.10  -97.29
+
+5 W SARITA                   KENEDY              KTXRIVE4      0.93  
+27.21  -97.88
+
+3 N LAGUNA VISTA             CAMERON             CMR-58        0.76  
+26.14  -97.29
+
+3 N BAYVIEW                  CAMERON             CAM-045       0.54  
+26.16  -97.40
+
+BAYVIEW                      CAMERON             KPIL          0.48  
+26.12  -97.40
+
+13 E BROWNSVILLE             CAMERON             CMR-094       0.45  
+25.92  -97.27
+
+HARLINGEN                    CAMERON             CMR-085       0.45  
+26.19  -97.69
+
+2 NNE LOS FRESNOS            CAMERON             CMR-105       0.44  
+26.09  -97.46
+
+8 E RIO HONDO                CAMERON             CMR-097       0.41  
+26.21  -97.46
+
+20 SE HARLINGEN              CAMERON             KTXHRLI6      0.38  
+25.98  -97.46
+
+2 E HARLINGEN                CAMERON             HGNT2         0.37  
+26.19  -97.65
+
+LOS FRESNOS                  CAMERON             CMR-021       0.37  
+26.07  -97.47
+
+HARLINGEN                    CAMERON             KHRL          0.36  
+26.19  -97.69
+
+2 NE HARLINGEN               CAMERON             KTXHRL11      0.35  
+26.41  -97.43
+
+5 N ENCINO                   BROOKS              KTXENCI5      0.35  
+27.00  -98.13
+
+3 SW COMBES                  CAMERON             CMR-093       0.29  
+26.20  -97.76
+
+3 WSW HARLINGEN              CAMERON             KTXHRLI7      0.29  
+26.17  -97.73
+
+1 SSW FALFURRIAS             BROOKS              BRK-006       0.29  
+27.21  -98.15
+
+LOS FRESNOS                  CAMERON             TXSANBE2      0.26  
+26.07  -97.48
+
+FALFURRIAS                   BROOKS              BRK-005       0.25  
+27.22  -98.15
+
+5 SSW RANCHO VIEJO           CAMERON             CMR-061       0.25  
+25.95  -97.58
+
+5 W FALFURRIASF              BROOKS              FAFT2         0.24  
+27.21  -99.04
+
+4 ENE LA FERIA               CAMERON             CMR-036       0.22  
+26.18  -97.76
+
+1 SSE SAN BENITO             CAMERON             CMR-101       0.22  
+26.12  -97.63
+
+FALFURRIAS                   BROOKS              KBKS          0.20  
+27.22  -98.14
+
+1 E RANCHO VIEJO             CAMERON             CMR-001       0.19  
+26.03  -97.55
+
+3 NNW BROWNSVILLE            CAMERON             CMR-016       0.19  
+25.97  -97.49
+
+2 W BROWNSVILLE              CAMERON             KTXBRO22      0.18  
+25.92  -97.48
+
+2 WNW BROWNSVILLE            CAMERON             CMR-084       0.17  
+25.94  -97.51
+
+9 SSW FALFURRIAS             BROOKS              BRK-003       0.16  
+27.10  -98.20
+
+2 NNE BROWNSVILLE            CAMERON             CMR-089       0.15  
+25.94  -97.47
+
+SANTA ROSA                   CAMERON             SNRT2         0.14  
+26.25  -97.83
+
+1 WNW BROWNSVILLE            CAMERON             CMR-090       0.13  
+25.92  -97.50
+
+BROWNSVILLE                  CAMERON             KBRO          0.08  
+25.92  -97.48
+
+2 W ENCINO                   BROOKS              KTXENCI3      0.05  
+26.93  -98.17
+
+LA FERIA                     CAMERON             KTXLAFE2      0.04  
+26.15  -97.82
+
+2 N HARLINGEN                CAMERON             KTXHRLI3      0.04  
+26.22  -97.69
+
+REMARKS: COMBINATION OF ASOS/AWOS, COCORAHS, AND APRS/CWOP.  TIMES
+BEST ESTIMATED WITHIN WARNING FRAME.
+
+
+
+D. INLAND FLOODING...
+---------------------------------------------------------------------
+COASTAL CAMERON...NONE.
+
+CAMERON...NONE.
+
+COASTAL WILLACY...NONE.
+
+WILLACY...NONE.
+
+BROOKS...NONE.
+
+KENEDY...NONE.
+
+---------------------------------------------------------------------
+
+E. MAXIMUM STORM SURGE AND STORM TIDE...
+OFFICIAL TIDE GAUGES NOTED WITH LEADING G
+---------------------------------------------------------------------
+
+COUNTY           CITY/TOWN        SURGE   TIDE   DATE/   BEACH       
+                 OR LOCATION      (FT)    (FT)   TIME    EROSION     
+---------------------------------------------------------------------
+CAMERON          SOUTH PADRE ISL   1.00   2.00  25/1330     NONE   
+
+CAMERON        G BRAZOS SANTIAGO   1.67   1.39  26/0518     NONE   
+
+CAMERON        G SOUTH PADRE ISL   1.77   1.40  26/0236     NONE   
+
+CAMERON        G PORT ISABEL       1.64   1.41  26/0124     NONE   
+
+
+REMARKS: NOTE:	FOR ALL LOCATIONS, PEAK SURGE AND TIDE OCCURRED
+*AFTER* TROPICAL STORM WARNINGS WERE CANCELLED. TIDE DATA PROVIDED
+IN MHHW AS CLOSE APPROXIMATION TO LEVELS AT SHORELINE. FIRST SOUTH
+PADRE ENTRY IS FOR THE BEACH/SURF INTERFACE. FOR PORT MANSFIELD AND
+BAFFIN BAY, PEAK MEAN SEA LEVEL VALUES WERE 0.754 FEET ON 25/1330Z
+AND 1.677 ON 26/0042Z RESPECTIVELY. ON THE BEACH, AN ESTIMATED 2
+FEET OF WATER DEPTH WAS NOTED BY SURVEY JUST AFTER HIGH TIDE. PEAK
+TIDE AND SURGE VALUES AT GAGING SITES WHEN WARNING WAS IN EFFECT
+INCLUDE: BRAZOS SANTIAGO - SURGE 1.559, TIDE, 1.168 (25/1330); SOUTH
+PADRE ISLAND COAST GUARD - SURGE 1.666, TIDE 1.239 (25/1318); PORT
+ISABEL - SURGE 1.457, TIDE 1.037 (25/1336). 
+
+
+
+F. TORNADOES...
+---------------------------------------------------------------------
+(DIST)CITY/TOWN              COUNTY           DATE/         EF SCALE 
+LAT LON (DEG DECIMAL                          TIME(UTC)    (IF KNOWN)
+DESCRIPTION                                                          
+---------------------------------------------------------------------
+
+
+G. STORM IMPACTS BY COUNTY...
+---------------------------------------------------------------------
+
+COUNTY            DEATHS           INJURIES             EVACUATIONS  
+DESCRIPTION
+---------------------------------------------------------------------
+COASTAL CAMERON      0                 0                          
+
+CAMERON              0                 0                     0    
+
+WILLACY              0                 0                     0    
+
+COASTAL WILLACY      0                 0                          
+
+BROOKS               0                 0                     0    
+
+KENEDY               0                 0                     0    
+
+$$
+
+Legend:
+I-Incomplete Data
+E-Estimated
+
+GOLDSMITH
+
+
+
+
