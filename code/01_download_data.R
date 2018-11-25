@@ -15,6 +15,8 @@
 
 ## ---- Libraries --------------------------------------------------------------
 # cran #
+library(glue)
+library(here)
 library(purrr)
 library(stringr)
 
@@ -28,15 +30,16 @@ library(stringr)
 
 ## ---- Execution --------------------------------------------------------------
 
+#' Intentionally Left Blank '#
+
 ## ---- * Settings -------------------------------------------------------------
 
-# Working directory path. Customize as needed.
-d <- "./datasets/harvey-prelims/"
+#' Intentionally Left Blank '#
 
 ## ---- * Options --------------------------------------------------------------
 # Reset options at end of script
-wd <- getwd()
-setwd(d)
+
+#' Intentionally Left Blank '#
 
 ## ---- * Variables ------------------------------------------------------------
 
@@ -53,7 +56,7 @@ rpts <- c("acus74.kbro.psh.bro.txt",
 walk(rpts, .f = function(x) {
   if (!file.exists(x)) {
     download.file(sprintf("ftp://tgftp.nws.noaa.gov/data/raw/ac/%s", x),
-                  destfile = x)
+                  destfile = here(glue("./data/{x}")))
   }
 })
 
@@ -62,4 +65,5 @@ walk(rpts, .f = function(x) {
 #' Intentionally Left Blank '#
 
 ## ---- * Reset Options --------------------------------------------------------
-setwd(wd)
+
+#' Intentionally Left Blank '#
