@@ -3,12 +3,10 @@ output_dir: "../docs"
 navbar:
   title: "Hurricane Harvey Preliminary Reports"
   left:
-    - text: "Home"
+    - text: "The Report"
       href: index.html
-    - text: "About"
-      href: about.html
-    - text: "License"
-      href: license.html
+    - text: "The Data"
+      href: data.html
   right:
     - icon: fa-github
       href: https://github.com/timtrice/hurricane_harvey_prelims
@@ -16,5 +14,6 @@ output:
   workflowr::wflow_html:
     toc: true
     toc_float: false
+    toc_depth: 6
     theme: cosmo
     highlight: textmate
