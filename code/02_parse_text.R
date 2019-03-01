@@ -2,24 +2,26 @@
 library(dplyr)
 library(glue)
 library(lubridate)
+library(purrr)
+library(stringr)
 library(tibble)
 
 # ---- load-data ----
-
 rpts <- c(
   "bro" = "acus74.kbro.psh.bro.txt",
   "crp" = "acus74.kcrp.psh.crp.txt",
   "ewx" = "acus74.kewx.psh.ewx.txt",
   "hgx" = "acus74.khgx.psh.hgx.txt",
   "lch" = "acus74.klch.psh.lch.txt",
-  "lix" = "acus74.klix.psh.lix.txt")
+  "lix" = "acus74.klix.psh.lix.txt"
+)
 
 # Read data
 txt <- map(rpts, ~readLines(here::here(glue("./data/{.x}"))))
 
 # ---- slp ----
-## ---- Section A. Lowest Sea Level Pressure ----
-## ---- Section B. Marine Obs ----
+# Section A. Lowest Sea Level Pressure
+# Section B. Marine Obs
 slp_raw <- c(map(txt, ~.[grep("^A\\.", .):grep("^C\\.", .)])) %>%
   flatten_chr()
 
@@ -38,7 +40,8 @@ slp_stations_n <- slp_obs_n - 1
 # Load stations
 # Here, I trim the strings then take the nchar of longest string, round to
 # nearest ten and pad the string. I'll use this to help extract data.
-slp_stations <- slp_raw[slp_stations_n] %>%
+slp_stations <-
+  slp_raw[slp_stations_n] %>%
   str_trim() %>%
   str_pad(width = round(max(nchar(.)), digits = -1), side = "right") %>%
   # Replace first "-" with "\t" to help split ID and Station
@@ -50,41 +53,49 @@ slp_obs <- slp_raw[slp_obs_n]
 # Combine stations and obs
 slp <- str_c(slp_stations, slp_obs)
 
+# Expected names of dataset
+slp_df_names <- c(
+  "txt", "ID", "Station", "Lat", "Lon", "Pres", "PresDTd",
+  "PresDThm", "PresRmks", "WindDir", "Wind", "WindDTd",
+  "WindDThm", "WindRmks", "GustDir", "Gust", "GustDTd",
+  "GustDThm", "GustRmks"
+)
+
 # Begin extraction. Move to dataframe and rename variables.
-slp_df <- str_match(slp,
-                    sprintf("^%s%s%s%s%s%s%s%s%s%s%s%s$",
-                            # ID-Station
-                            "(\\w+)\t*(?<=\t{0,1})(.+)(?=\\s+\\d{2}\\.\\d{2})",
-                            # Lat
-                            "\\s+(\\d{2}\\.\\d{2})",
-                            # Lon
-                            "\\s+-*(\\d{2,6}\\.\\d{2})",
-                            # Pres
-                            "\\s+(\\d{1,4}\\.\\d{1})*",
-                            # PresDTd, PresDThm
-                            "\\s+(\\w{1,3}|N)*/*(\\w{1,4})*",
-                            # PresRmks
-                            "\\s+(I)*",
-                            # WindDir, Wind
-                            "\\s+(\\w{3})/(\\d{3})",
-                            # Wind DTd, WindDThm
-                            "\\s+(\\d{2,3})*/*(\\d{3,4})*",
-                            # WindRmks
-                            "\\s+(I)*",
-                            # GustDir, Gust
-                            "\\s+(\\w{3})*/*(\\d{3})*",
-                            # GustDTd, GustDThm
-                            "\\s+(\\d{2,3})*/*(\\d{3,4})*",
-                            # GustRmks
-                            "\\s+(I)*")) %>%
-  as_data_frame()
-
-names(slp_df) <- c("txt", "ID", "Station", "Lat", "Lon", "Pres", "PresDTd",
-                   "PresDThm", "PresRmks", "WindDir", "Wind", "WindDTd",
-                   "WindDThm", "WindRmks", "GustDir", "Gust", "GustDTd",
-                   "GustDThm", "GustRmks")
-
-slp_df <- arrange(slp_df, ID)
+slp_df <-
+  str_match(
+    slp,
+    sprintf("^%s%s%s%s%s%s%s%s%s%s%s%s$",
+            # ID-Station
+            "(\\w+)\t*(?<=\t{0,1})(.+)(?=\\s+\\d{2}\\.\\d{2})",
+            # Lat
+            "\\s+(\\d{2}\\.\\d{2})",
+            # Lon
+            "\\s+-*(\\d{2,6}\\.\\d{2})",
+            # Pres
+            "\\s+(\\d{1,4}\\.\\d{1})*",
+            # PresDTd, PresDThm
+            "\\s+(\\w{1,3}|N)*/*(\\w{1,4})*",
+            # PresRmks
+            "\\s+(I)*",
+            # WindDir, Wind
+            "\\s+(\\w{3})/(\\d{3})",
+            # Wind DTd, WindDThm
+            "\\s+(\\d{2,3})*/*(\\d{3,4})*",
+            # WindRmks
+            "\\s+(I)*",
+            # GustDir, Gust
+            "\\s+(\\w{3})*/*(\\d{3})*",
+            # GustDTd, GustDThm
+            "\\s+(\\d{2,3})*/*(\\d{3,4})*",
+            # GustRmks
+            "\\s+(I)*"
+    )
+  ) %>%
+  as_tibble(.name_repair = "minimal") %>%
+  set_names(nm = slp_df_names) %>%
+  arrange(ID) %>%
+  select(-txt)
 
 # Begin clean-up
 # Trim all values
@@ -128,17 +139,22 @@ slp_df$Station[slp_df$ID == "TXVC-4"] <- NA
 # Since all events of the storm occurred in August I can supply year, month.
 # Some values will generate failure to parse due to being NA or other
 # invalid date or time.
-slp_df <- slp_df %>%
-  mutate(PresDT = ymd_hm(sprintf("2017-08-%s %s", PresDTd, PresDThm)),
-         WindDT = ymd_hm(sprintf("2017-08-%s %s", WindDTd, WindDThm)),
-         GustDT = ymd_hm(sprintf("2017-08-%s %s", GustDTd, GustDThm)))
+slp_df <-
+  slp_df %>%
+  mutate(
+    PresDT = ymd_hm(sprintf("2017-08-%s %s", PresDTd, PresDThm)),
+    WindDT = ymd_hm(sprintf("2017-08-%s %s", WindDTd, WindDThm)),
+    GustDT = ymd_hm(sprintf("2017-08-%s %s", GustDTd, GustDThm))
+  )
 
 slp_df <- slp_df %>%
   select(ID:Pres, PresDT,PresRmks, Wind, WindDir, WindDT, WindRmks, Gust,
          GustDir, GustDT, GustRmks)
 
+save(slp_df, file = here::here("./output/slp_df.rda"))
+
 # ---- rain ----
-## ---- Section C. STORM TOTAL RAINFALL ----
+# Section C. STORM TOTAL RAINFALL
 rain_raw <- c(map(txt, ~.[grep("^C\\.", .):grep("^D\\.", .)]))  %>%
   flatten_chr()
 
@@ -160,6 +176,10 @@ rain_obs <- rain_raw[rain_obs_n]
 
 rain <- str_c(rain_stations, rain_obs)
 
+rain_df_names <- c(
+  "txt", "Location", "County", "Station", "Rain", "RainRmks", "Lat", "Lon"
+  )
+
 rain_df <- str_match(rain,
                      pattern = sprintf("^%s%s\\s+%s\\s+%s\\s*%s\\s+%s\\s+%s$",
                                        "(.{29})",
@@ -169,12 +189,13 @@ rain_df <- str_match(rain,
                                        "(I)*",
                                        "(\\d{1,2}\\.\\d{2})",
                                        "-*(\\d{2,3}\\.\\d{2})")) %>%
-  as_data_frame() %>%
-  rename(txt = V1, Location = V2, County = V3, Station = V4, Rain = V5,
-         RainRmks = V6, Lat = V7, Lon = V8) %>%
+  as_tibble(.name_repair = "minimal") %>%
+  set_names(nm = rain_df_names) %>%
   mutate_at(.vars = c("Rain", "Lat", "Lon"), .funs = as.numeric) %>%
   mutate(Lon = if_else(Lon > 0, Lon * -1, Lon)) %>%
-  select(Location, County, Station, Lat, Lon, Rain, RainRmks)
+  select(-txt)
+
+save(rain_df, file = here::here("./output/rain_df.rda"))
 
 # ---- tors ----
 # F. Tornadoes
@@ -231,6 +252,10 @@ tor_details <- str_c(tor_details, collapse = "\n") %>%
 
 tor <- str_c(tor_stations, tor_obs)
 
+tor_df_names <- c(
+  "txt", "Location", "CountY", "Day", "Time", "Scale", "Lat", "Lon"
+)
+
 tor_df <- str_match(tor, sprintf("^%s%s%s\\s+%s\\s+%s\\s+%s$",
                                  "(.{29})",
                                  "(.{17})",
@@ -238,11 +263,14 @@ tor_df <- str_match(tor, sprintf("^%s%s%s\\s+%s\\s+%s\\s+%s$",
                                  "(\\w{3})",
                                  "\\s+(\\d{2}\\.\\d{2})",
                                  "\\s+(-\\d{2}\\.\\d{2})$")) %>%
-  as_data_frame() %>%
-  mutate(Date = ymd_hm(sprintf("2017-08-%s %s", V4, V5))) %>%
-  rename(Location = V2, County = V3, Scale = V6, Lat = V7, Lon = V8) %>%
+  as_tibble(.name_repair = "minimal") %>%
+  set_names(nm = tor_df_names) %>%
+  mutate(Date = ymd_hm(sprintf("2017-08-%s %s", Day, Time))) %>%
   mutate_at(.vars = c("Lat", "Lon"), .funs = as.numeric) %>%
-  select(Location, County, Lat, Lon, Date, Scale)
+  select(-txt) %>%
+  {.}
 
 # Now add in tor_details
 tor_df$Details <- tor_details
+
+save(tor_df, file = here::here("./output/tor_df.rda"))

@@ -9,61 +9,30 @@
 #' products are saved and should not be downloaded again if they already exist.
 #' If they do exist, exit.
 #'
-#' @param NA
-#'
-#' @examples NA
 
-## ---- Libraries --------------------------------------------------------------
+# ---- libraries ----
 # cran #
 library(glue)
 library(here)
 library(purrr)
-library(stringr)
 
-# github #
-
-# other sources #
-
-## ---- Functions --------------------------------------------------------------
-
-#' Intentionally Left Blank '#
-
-## ---- Execution --------------------------------------------------------------
-
-#' Intentionally Left Blank '#
-
-## ---- * Settings -------------------------------------------------------------
-
-#' Intentionally Left Blank '#
-
-## ---- * Options --------------------------------------------------------------
-# Reset options at end of script
-
-#' Intentionally Left Blank '#
-
-## ---- * Variables ------------------------------------------------------------
-
+# ---- variables ----
 # URLs to prelim reports, per NWS station.
-rpts <- c("acus74.kbro.psh.bro.txt",
-          "acus74.kcrp.psh.crp.txt",
-          "acus74.kewx.psh.ewx.txt",
-          "acus74.khgx.psh.hgx.txt",
-          "acus74.klch.psh.lch.txt",
-          "acus74.klix.psh.lix.txt")
+rpts <- c(
+  "acus74.kbro.psh.bro.txt",
+  "acus74.kcrp.psh.crp.txt",
+  "acus74.kewx.psh.ewx.txt",
+  "acus74.khgx.psh.hgx.txt",
+  "acus74.klch.psh.lch.txt",
+  "acus74.klix.psh.lix.txt"
+)
 
-## ---- * Data -----------------------------------------------------------------
-
+# ---- data ----
 walk(rpts, .f = function(x) {
   if (!file.exists(x)) {
-    download.file(sprintf("ftp://tgftp.nws.noaa.gov/data/raw/ac/%s", x),
-                  destfile = here(glue("./data/{x}")))
+    download.file(
+      sprintf("ftp://tgftp.nws.noaa.gov/data/raw/ac/%s", x),
+      destfile = here(glue("./data/{x}"))
+    )
   }
 })
-
-## ---- * * Cleaning -----------------------------------------------------------
-
-#' Intentionally Left Blank '#
-
-## ---- * Reset Options --------------------------------------------------------
-
-#' Intentionally Left Blank '#
