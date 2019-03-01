@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Code</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Hurricane Harvey Preliminary Reports</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">The Report</a>
+</li>
+<li>
+  <a href="data.html">The Data</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/timtrice/hurricane_harvey_prelims">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<!-- Add a small amount of space between sections. -->
+<style type="text/css">
+div.section {
+  padding-top: 12px;
+}
+</style>
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Code</h1>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#data">Data</a><ul>
+<li><a href="#sea-level-pressure-and-marine-observations">Sea Level Pressure and Marine Observations</a><ul>
+<li><a href="#id-id-station-station-opt">ID [<code>ID</code>], Station [<code>Station</code>] (opt)</a></li>
+<li><a href="#latitude-lat">Latitude [<code>Lat</code>]</a></li>
+<li><a href="#longitude-lon">Longitude [<code>Lon</code>]</a></li>
+<li><a href="#minimum-pressure-pres-opt">Minimum Pressure [<code>Pres</code>] <em>opt</em></a></li>
+<li><a href="#datetime-of-pressure-observation-presdt-opt">Date/time of pressure observation [<code>PresDT</code>] <em>opt</em></a></li>
+<li><a href="#pressure-remarks-presrmks-opt">Pressure remarks [<code>PresRmks</code>] <em>opt</em></a></li>
+<li><a href="#maximum-sustained-wind-direction-winddir-maximum-sustained-winds-opt-wind">Maximum sustained wind direction [<code>WindDir</code>], Maximum sustained winds (opt) [<code>Wind</code>]</a></li>
+</ul></li>
+<li><a href="#rainfall">Rainfall</a></li>
+<li><a href="#tornadoes">Tornadoes</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>
+<button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+</button>
+</p>
+<div id="workflowr-report" class="collapse">
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#summary">Summary</a>
+</li>
+<li>
+<a data-toggle="tab" href="#report"> Report <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
+</li>
+<li>
+<a data-toggle="tab" href="#versions">Past versions</a>
+</li>
+</ul>
+<div class="tab-content">
+<div id="summary" class="tab-pane fade in active">
+<p>
+<strong>Last updated:</strong> 2019-03-01
+</p>
+<p>
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
+</p>
+<p>
+<strong>Knit directory:</strong> <code>project/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
+</p>
+<p>
+This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis was created with <a
+  href="https://github.com/jdblischak/workflowr">workflowr</a> (version 1.2.0). The <em>Report</em> tab describes the reproducibility checks that were applied when the results were created. The <em>Past versions</em> tab lists the development history.
+</p>
+<hr>
+</div>
+<div id="report" class="tab-pane fade">
+<div id="workflowr-checks" class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
+</p>
+</div>
+<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongEnvironmentstrongempty"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Environment:</strong> empty </a>
+</p>
+</div>
+<div id="strongEnvironmentstrongempty" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! The global environment was empty. Objects defined in the global environment can affect the analysis in your R Markdown file in unknown ways. For reproduciblity it’s best to always run the code in an empty environment.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSeedstrongcodesetseed20181125code"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Seed:</strong> <code>set.seed(20181125)</code> </a>
+</p>
+</div>
+<div id="strongSeedstrongcodesetseed20181125code" class="panel-collapse collapse">
+<div class="panel-body">
+<p>The command <code>set.seed(20181125)</code> was run prior to running the code in the R Markdown file. Setting a seed ensures that any results that rely on randomness, e.g. subsampling or permutations, are reproducible.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSessioninformationstrongrecorded"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Session information:</strong> recorded </a>
+</p>
+</div>
+<div id="strongSessioninformationstrongrecorded" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! Recording the operating system, R version, and package versions is critical for reproducibility.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongnone"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Cache:</strong> none </a>
+</p>
+</div>
+<div id="strongCachestrongnone" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Nice! There were no cached chunks for this analysis, so you can be confident that you successfully produced the results during this run.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomtimtricehurricaneharveyprelimstree494f749f6330bcdc7123c89e00c41b37097d1c55targetblank494f749a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/timtrice/hurricane_harvey_prelims/tree/494f749f6330bcdc7123c89e00c41b37097d1c55" target="_blank">494f749</a> </a>
+</p>
+</div>
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomtimtricehurricaneharveyprelimstree494f749f6330bcdc7123c89e00c41b37097d1c55targetblank494f749a" class="panel-collapse collapse">
+<div class="panel-body">
+<p>
+Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
+</p>
+<pre><code>
+Ignored files:
+    Ignored:    .Rhistory
+    Ignored:    .Rproj.user/
+
+</code></pre>
+<p>
+Note that any generated files, e.g. HTML, png, CSS, etc., are not included in this status report because it is ok for generated content to have uncommitted changes.
+</p>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</div>
+<div id="versions" class="tab-pane fade">
+
+<p>
+These are the previous versions of the R Markdown and HTML files. If you’ve configured a remote Git repository (see <code>?wflow_git_remote</code>), click on the hyperlinks in the table below to view them.
+</p>
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+File
+</th>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+<th>
+Message
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/timtrice/hurricane_harvey_prelims/blob/4e004f71505d458a4ade28697bec393a5324b380/analysis/data.Rmd" target="_blank">4e004f7</a>
+</td>
+<td>
+Tim Trice
+</td>
+<td>
+2019-03-01
+</td>
+<td>
+Add data report
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<p>These text products are listed under the header ACUS74. They can be found on the <a href="ftp://tgftp.nws.noaa.gov/data/raw/ac/">National Weather Service FTP server</a>.</p>
+<p>The following reports were obtained:</p>
+<ul>
+<li><p><a href="ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.kbro.psh.bro.txt">Brownsville, TX (BRO)</a></p></li>
+<li><p><a href="ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.kcrp.psh.crp.txt">Corpus Christi, TX (CRP)</a></p></li>
+<li><p><a href="ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.kewx.psh.ewx.txt">Austin/San Antonion, TX (EWX)</a></p></li>
+<li><p><a href="ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.khgx.psh.hgx.txt">Houston, TX (HGX)</a></p></li>
+<li><p><a href="ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.klch.psh.lch.txt">Lake Charles, LA (LCH)</a></p></li>
+<li><p><a href="ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.klix.psh.lix.txt">New Orleans, LA (LIX)</a></p></li>
+</ul>
+<p>The links above point to the latest ACUS74 product issued by the respective NWS office. Therefore, it is possible that by the time you have read this article, the content of the text product has changed. Because of this, the rds data files have been saved to this website’s <a href="https://github.com/timtrice/hurricane_harvey_prelims/tree/0c55d581f268acd1be4f8034ac6da5c35ce85a26/data">GitHub repository</a>.</p>
+<p>All times reported are in UTC. Pressure observations are in millibars. Wind and Gust observations are in knots.</p>
+<div id="libraries" class="section level2">
+<h2>Libraries</h2>
+<p>The following libraries were used in this article:</p>
+<pre class="r"><code>library(dplyr)
+library(glue)
+library(lubridate)
+library(purrr)
+library(stringr)
+library(tibble)</code></pre>
+</div>
+<div id="data" class="section level2">
+<h2>Data</h2>
+<p>To load the data, I just put the links into a named list. I originally had considered keeping the data separate by NWS office but determined this was not necessary.</p>
+<p>The code below looks for the data file mentioned earlier and, if it exists, loads the <code>txt</code> vector. Otherwise, each of the text products will be collected for parsing.</p>
+<pre class="r"><code>rpts &lt;- c(
+  &quot;bro&quot; = &quot;acus74.kbro.psh.bro.txt&quot;,
+  &quot;crp&quot; = &quot;acus74.kcrp.psh.crp.txt&quot;,
+  &quot;ewx&quot; = &quot;acus74.kewx.psh.ewx.txt&quot;,
+  &quot;hgx&quot; = &quot;acus74.khgx.psh.hgx.txt&quot;,
+  &quot;lch&quot; = &quot;acus74.klch.psh.lch.txt&quot;,
+  &quot;lix&quot; = &quot;acus74.klix.psh.lix.txt&quot;
+)
+
+# Read data
+txt &lt;- map(rpts, ~readLines(here::here(glue(&quot;./data/{.x}&quot;))))</code></pre>
+<p>Each text product contains several sections:</p>
+<ul>
+<li><p>Section A. Lowest Sea Level Pressure/Maximum Sustained Winds and Peak Gusts</p></li>
+<li><p>Non-METAR Observations</p></li>
+<li><p>Section B. Marine Observations</p></li>
+<li><p>Section C. Storm Total Rainfall</p></li>
+<li><p>Section D. Inland Flooding (not collected)</p></li>
+<li><p>Section E. Maximum Storm Surge and Storm Tide (not collected)</p></li>
+<li><p>Section F. Tornadoes</p></li>
+<li><p>Section G. Storm Impacts by County (not collected)</p></li>
+</ul>
+<p>Not all sections will contain data. For this article, all data collected was that which contained a latitude and longitude position.</p>
+<p>Each section contains a data header:</p>
+<pre><code>A. LOWEST SEA LEVEL PRESSURE/MAXIMUM SUSTAINED WINDS AND PEAK GUSTS
+---------------------------------------------------------------------
+METAR OBSERVATIONS...
+NOTE: ANEMOMETER HEIGHT IS 10 METERS AND WIND AVERAGING IS 2 MINUTES
+---------------------------------------------------------------------
+LOCATION  ID    MIN    DATE/     MAX      DATE/     PEAK    DATE/
+LAT  LON        PRES   TIME      SUST     TIME      GUST    TIME
+DEG DECIMAL     (MB)   (UTC)     (KT)     (UTC)     (KT)    (UTC)
+---------------------------------------------------------------------</code></pre>
+<pre><code>B. MARINE OBSERVATIONS...
+NOTE: ANEMOMETER HEIGHT IN METERS AND WIND AVERAGING PERIOD IN
+MINUTES INDICATED UNDER MAXIMUM SUSTAINED WIND IF KNOWN
+---------------------------------------------------------------------
+LOCATION  ID    MIN    DATE/     MAX      DATE/     PEAK    DATE/
+LAT  LON        PRES   TIME      SUST     TIME      GUST    TIME
+DEG DECIMAL     (MB)   (UTC)     (KT)     (UTC)     (KT)    (UTC)
+---------------------------------------------------------------------</code></pre>
+<p>Additionally, a subsection of A exists:</p>
+<pre><code>NON-METAR OBSERVATIONS... 
+NOTE: ANEMOMETER HEIGHT IN METERS AND WIND AVERAGING PERIOD IN
+MINUTES INDICATED UNDER MAXIMUM SUSTAINED WIND IF KNOWN
+---------------------------------------------------------------------
+LOCATION  ID    MIN    DATE/     MAX      DATE/     PEAK    DATE/
+LAT  LON        PRES   TIME      SUST     TIME      GUST    TIME
+DEG DECIMAL     (MB)   (UTC)     (KT)     (UTC)     (KT)    (UTC)
+---------------------------------------------------------------------</code></pre>
+<p>This subsection was added in as part of Sectoin A but is indistinguishable in the parsed dataset.</p>
+<p>Observation examples are inluded in the relevant section below.</p>
+<p>Numerous observations contain remarks (identified in the dataset by <code>ends_with(&quot;Rmks&quot;)</code>). Every section contains a Remarks footer; however, this may not be populated and, therefore, not every observation with a <code>.Rmks</code> variable would have additional Remarks listed in the text product. The additional Remarks were not collected.</p>
+<p>The <code>.Rmks</code> legend is identified in the footer of each text product as:</p>
+<ul>
+<li><p>“I” - Incomplete data</p></li>
+<li><p>“E” - Estimated</p></li>
+</ul>
+<p>All <code>.Rmks</code> variables in the datasets are either <em>NA</em> or “I”.</p>
+<p>Sections A and B may also contain additional anenometer height and wind-averaging period variables on a third line. This data was not collected but could easily have been; I did not feel it was relevant to this article.</p>
+<div id="sea-level-pressure-and-marine-observations" class="section level3">
+<h3>Sea Level Pressure and Marine Observations</h3>
+<p>A typical observation in Section A or B will look like the following:</p>
+<pre><code>RCPT2-ROCKPORT                                                      
+28.02  -97.05   941.8 26/0336 I 017/059  26/0154 I 016/094 26/0148 I</code></pre>
+<p>There are 15 variables in the observation above (in order as they appear, with the example text):</p>
+<ul>
+<li><p><code>ID</code> (RCPT2)</p></li>
+<li><p><code>Station</code> (ROCKPORT)</p></li>
+<li><p><code>Lat</code> (28.02)</p></li>
+<li><p><code>Lon</code> (-97.05)</p></li>
+<li><p><code>Pres</code> (941.8) [barometric pressure, mb]</p></li>
+<li><p><code>PresDT</code> (26/0336) [date/time of <code>Pres</code> observation, UTC]</p></li>
+<li><p><code>PresRmks</code> (I) [incomplete pressure observation]</p></li>
+<li><p><code>Wind</code>, <code>WindDir</code> (017/059) [wind speed, kts, and wind direction]</p></li>
+<li><p><code>WindDT</code> (26/0154) [date/time of preceeding wind observation, UTC]</p></li>
+<li><p><code>WindRmks</code> (I) [incomplete wind observation]</p></li>
+<li><p><code>Gust</code>, <code>GustDir</code> (016/094) [maximum gust, kts, and direction]</p></li>
+<li><p><code>GustDT</code> (26/0148) [date/time of preceeding gust observation, UTC]</p></li>
+<li><p><code>GustRmks</code> (I) [incomplete gust observation]</p></li>
+</ul>
+<p>Every observation has an empty line before and after which can be used as a delimiter to spilt observations.</p>
+<p>To extract the relevant sections, I loop through the text products (<code>txt</code>) and identify where Section A and Section C begins. With these numerical indices, I can extract both sections, assigning the subset to <code>slp_raw</code>.</p>
+<pre class="r"><code>slp_raw &lt;- c(map(txt, ~.[grep(&quot;^A\\.&quot;, .):grep(&quot;^C\\.&quot;, .)])) %&gt;%
+  flatten_chr()</code></pre>
+<p>From there, I identify all vector elements that begin with a latitude and longitude field. I counted these values (<code>slp_n</code>) so that I know exactly how long my final results will be (and to check progress as I move along, making sure I haven’t inadvertently removed anything).</p>
+<p>Once I know where the observation indices are (<code>slp_obs_n</code>) I can find the station identification by calculating <code>slp_obs_n - 1</code>; this gives me <code>slp_stations_n</code>.</p>
+<pre class="r"><code>slp_obs_ptn &lt;- &quot;^\\d\\d\\.\\d\\d\\s*-*\\d\\d\\d*\\.\\d\\d.+&quot;
+slp_n &lt;- sum(str_count(slp_raw, slp_obs_ptn))
+slp_obs_n &lt;- str_which(slp_raw, slp_obs_ptn)
+slp_stations_n &lt;- slp_obs_n - 1</code></pre>
+<p>Before merging the two vectors, I found some station values were not all the same length; I felt this would be beneficial with the regex. I create <code>slp_stations</code>, first trimming all values then finding the max length value. With the max length, I rounded up to the nearest ten and padded all all values to the right.</p>
+<p>The last bit of manipulation involved replacing the first “-”, if available, with a “\t” character. This also helped me make it easier to split variables <code>ID</code> and <code>Station</code> since <code>Station</code> would contain additional “-” characters.</p>
+<pre class="r"><code>slp_stations &lt;-
+  slp_raw[slp_stations_n] %&gt;%
+  str_trim() %&gt;%
+  str_pad(width = round(max(nchar(.)), digits = -1), side = &quot;right&quot;) %&gt;%
+  # Replace first &quot;-&quot; with &quot;\t&quot; to help split ID and Station
+  str_replace(&quot;\\s*-\\s*&quot;, &quot;\t&quot;)</code></pre>
+<p>Note that the code above split <code>ID</code> “TXCV-4” which would later be corrected.</p>
+<p>Finally, I subset <code>slp_obs</code> and then with <code>slp_stations</code> make vector <code>slp</code>.</p>
+<pre class="r"><code># Load observations and trim
+slp_obs &lt;- slp_raw[slp_obs_n]
+
+# Combine stations and obs
+slp &lt;- str_c(slp_stations, slp_obs)</code></pre>
+<p>Following is a look at the head of <code>slp</code>:</p>
+<pre class="r"><code>head(slp, n = 5L)</code></pre>
+<pre><code>[1] &quot;KBRO\tBROWNSVILLE INTL ARPT                        25.91 -97.42   1002.9 25/1153   300/022  25/1853   290/032 25/1753  &quot;
+[2] &quot;KHRL\tHARLINGEN VALLEY INTL ARPT                   26.22 -97.66   1003.6 25/1252   310/023  25/1841   310/033 25/1852  &quot;
+[3] &quot;KPIL\tPORT ISABEL ARPT                             26.15 -97.23   1001.9 25/1253   300/024  25/1553   300/034 25/1453  &quot;
+[4] &quot;KBKS\tBROOKS COUNTY ARPT                           26.20 -98.12   1002.2 26/0215   290/019  26/0215   290/027 26/0215  &quot;
+[5] &quot;KTXS33                                            26.13 -97.17   1003.0 25/2240   999/999  99/9999   999/999 99/9999  &quot; </code></pre>
+<div id="id-id-station-station-opt" class="section level4">
+<h4>ID [<code>ID</code>], Station [<code>Station</code>] (opt)</h4>
+<p>Matching <code>ID</code> and <code>Station</code> is easier after switching the first “-” with a “\t”. <code>Station</code> is optional. To find the end of the string I simply looked for the latitude pattern that would follow.</p>
+<pre class="r"><code>            # ID-Station
+            &quot;(\\w+)\t*(?&lt;=\t{0,1})(.+)(?=\\s+\\d{2}\\.\\d{2})&quot;,</code></pre>
+</div>
+<div id="latitude-lat" class="section level4">
+<h4>Latitude [<code>Lat</code>]</h4>
+<p>Latitude was also very easy to extract. The pattern just looks for four digits with a decimal splitting in half.</p>
+<pre class="r"><code>            # Lat
+            &quot;\\s+(\\d{2}\\.\\d{2})&quot;,</code></pre>
+</div>
+<div id="longitude-lon" class="section level4">
+<h4>Longitude [<code>Lon</code>]</h4>
+<p>Extracting Longitude was a little bit more of a challenge. Most observations have a negative longitude value (since occurring in the northwestern hemisphere). This was accurately reflected in the text products; mostly. Some values did not contain the leading “-” such as <code>Station</code> “KEFD”:</p>
+<pre class="r"><code>slp[grep(&quot;^KEFD&quot;, slp)][2]</code></pre>
+<pre><code>[1] &quot;KEFD                                              29.62 95.17    1003.4 29/1650   160/027  26/1750   360/036 29/2150  &quot;</code></pre>
+<p>To accomodate the possibilities, I had to be loose with the number of digits expected in addition to making the negative sign optional.</p>
+<pre class="r"><code>            # Lon
+            &quot;\\s+-*(\\d{2,6}\\.\\d{2})&quot;,</code></pre>
+</div>
+<div id="minimum-pressure-pres-opt" class="section level4">
+<h4>Minimum Pressure [<code>Pres</code>] <em>opt</em></h4>
+<p>Expected pressure values would have a format like <code>\\d{3,4}\\.\\d{2}</code>. Some observations had values of “9999.0” which clearly were invalid (expected ranges were roughly between 940 and 1010). These would later be cleaned up.</p>
+<pre class="r"><code>            # Pres
+            &quot;\\s+(\\d{1,4}\\.\\d{1})*&quot;,</code></pre>
+</div>
+<div id="datetime-of-pressure-observation-presdt-opt" class="section level4">
+<h4>Date/time of pressure observation [<code>PresDT</code>] <em>opt</em></h4>
+<p><code>PresDT</code> was initially split to extract the date value first (<code>PresDTd</code>) followed by the “%h%m” value (<code>PresDThm</code>). The general format, “\d{2}/\d{4}” would not work primarily because many observations contained the text “MM” or “N/A”.</p>
+<p>Additionally, some observations also held the value “99/9999”. This would be accepted by the default format but would fail when converting the values to a valid date/time variable. These would later be cleaned.</p>
+<p>With this, I ended up being very generous with the regex.</p>
+<pre class="r"><code>            # PresDTd, PresDThm
+            &quot;\\s+(\\w{1,3}|N)*/*(\\w{1,4})*&quot;,</code></pre>
+</div>
+<div id="pressure-remarks-presrmks-opt" class="section level4">
+<h4>Pressure remarks [<code>PresRmks</code>] <em>opt</em></h4>
+<p>As noted previously, some <code>Pres</code> variables may be incomplete for unknown reasons. These values would be indicated with the letter “I” as noted in the “RCPT2” example earlier.</p>
+<pre class="r"><code>            # PresRmks
+            &quot;\\s+(I)*&quot;,</code></pre>
+</div>
+<div id="maximum-sustained-wind-direction-winddir-maximum-sustained-winds-opt-wind" class="section level4">
+<h4>Maximum sustained wind direction [<code>WindDir</code>], Maximum sustained winds (opt) [<code>Wind</code>]</h4>
+<p>Variables <code>WindDir</code> and <code>Wind</code> were split with a “/” character. However, again, not all values were numeric as expected, such as “LOPL1”:</p>
+<pre class="r"><code>slp[grep(&quot;^LOPL1&quot;, slp)]</code></pre>
+<pre><code>[1] &quot;LOPL1\tLA OFFSHORE OIL PORT                        28.88  -90.03   998.1 07/2216   080/029 07/2011    090/037 07/1811  &quot;</code></pre>
+<p>Invalid values such as “999” would later be marked as <code>NA</code>.</p>
+<pre class="r"><code>            # WindDir, Wind
+            &quot;\\s+(\\w{3})/(\\d{3})&quot;,</code></pre>
+<p>The remaining variables followed generally the same rules as similar variables above (i.e., <code>GustDir</code> for <code>WindDir</code>, <code>GustDT</code> for <code>WindDT</code>, etc.). The final <code>str_match</code> call brought all expected observations in order.</p>
+<pre class="r"><code># Begin extraction. Move to dataframe and rename variables.
+slp_df &lt;-
+  str_match(
+    slp,
+    sprintf(&quot;^%s%s%s%s%s%s%s%s%s%s%s%s$&quot;,
+            # ID-Station
+            &quot;(\\w+)\t*(?&lt;=\t{0,1})(.+)(?=\\s+\\d{2}\\.\\d{2})&quot;,
+            # Lat
+            &quot;\\s+(\\d{2}\\.\\d{2})&quot;,
+            # Lon
+            &quot;\\s+-*(\\d{2,6}\\.\\d{2})&quot;,
+            # Pres
+            &quot;\\s+(\\d{1,4}\\.\\d{1})*&quot;,
+            # PresDTd, PresDThm
+            &quot;\\s+(\\w{1,3}|N)*/*(\\w{1,4})*&quot;,
+            # PresRmks
+            &quot;\\s+(I)*&quot;,
+            # WindDir, Wind
+            &quot;\\s+(\\w{3})/(\\d{3})&quot;,
+            # Wind DTd, WindDThm
+            &quot;\\s+(\\d{2,3})*/*(\\d{3,4})*&quot;,
+            # WindRmks
+            &quot;\\s+(I)*&quot;,
+            # GustDir, Gust
+            &quot;\\s+(\\w{3})*/*(\\d{3})*&quot;,
+            # GustDTd, GustDThm
+            &quot;\\s+(\\d{2,3})*/*(\\d{3,4})*&quot;,
+            # GustRmks
+            &quot;\\s+(I)*&quot;
+    )
+  ) %&gt;%
+  as_tibble(.name_repair = &quot;minimal&quot;) %&gt;%
+  set_names(nm = slp_df_names) %&gt;%
+  arrange(ID) %&gt;%
+  select(-txt)</code></pre>
+</div>
+</div>
+<div id="rainfall" class="section level3">
+<h3>Rainfall</h3>
+<p>Section C of the text products listed recorded rainfall observations across the Texas and Louisiana area. These observations were similar in format to those of pressure:</p>
+<pre><code>COLETO CREEK                 GOLIAD              CKDT2         9.42 I
+28.73  -97.17</code></pre>
+<p>The following fields were extracted:</p>
+<ul>
+<li><p><code>Location</code> (“COLETO CREEK”)</p></li>
+<li><p><code>Count</code> (“GOLIAD”)</p></li>
+<li><p><code>Station</code> (“CKDT2”) <em>opt</em></p></li>
+<li><p><code>Rain</code> (“9.42”)</p></li>
+<li><p><code>RainRmks</code> (“I”)</p></li>
+<li><p><code>Lat</code> (“28.73”)</p></li>
+<li><p><code>Lon</code> (“-97.17”)</p></li>
+</ul>
+<p>Extracting these observations followed the same premise for that of <code>slp</code>; identifying the latitude lines then subsetting those indices and the previous indices and combining into a vector.</p>
+<p>Unlike <code>slp</code>, there were no surprises in cleaning this data. The regex used:</p>
+<pre class="r"><code>rain_df &lt;- str_match(rain,
+                     pattern = sprintf(&quot;^%s%s\\s+%s\\s+%s\\s*%s\\s+%s\\s+%s$&quot;,
+                                       &quot;(.{29})&quot;,
+                                       &quot;(.{19})&quot;,
+                                       &quot;(.{0,12})&quot;,
+                                       &quot;(\\d{1,2}\\.\\d{2})&quot;,
+                                       &quot;(I)*&quot;,
+                                       &quot;(\\d{1,2}\\.\\d{2})&quot;,
+                                       &quot;-*(\\d{2,3}\\.\\d{2})&quot;)) %&gt;%
+  as_tibble(.name_repair = &quot;minimal&quot;) %&gt;%
+  set_names(nm = rain_df_names) %&gt;%
+  mutate_at(.vars = c(&quot;Rain&quot;, &quot;Lat&quot;, &quot;Lon&quot;), .funs = as.numeric) %&gt;%
+  mutate(Lon = if_else(Lon &gt; 0, Lon * -1, Lon)) %&gt;%
+  select(-txt)</code></pre>
+</div>
+<div id="tornadoes" class="section level3">
+<h3>Tornadoes</h3>
+<p>Section F lists reported tornadoes for each region of responsibility. Some NWS offices reported no tornado observations. Others, such as Houston, reported at least a dozen.</p>
+<p>An example observation is as follows:</p>
+<pre><code>4 NNE SEADRIFT               CALHOUN          25/2114          EF0   
+28.43  -96.67
+
+FACEBOOK PHOTOS AND VIDEO SHOWED A BRIEF TORNADO TOUCHED DOWN ON
+GATES ROAD NEAR SEADRIFT. A SHED AND CARPORT WERE DESTROYED AND A
+FEW TREES WERE BLOWN DOWN. RATED EF0. </code></pre>
+<p>Each observation, again, was preceeded and proceeded by an empty line.</p>
+<ul>
+<li><p><code>Location</code> (“4 NNE SEADRIFT”)</p></li>
+<li><p><code>County</code> (“CALHOUN”)</p></li>
+<li><p><code>Date</code> (“25/2114”)</p></li>
+<li><p><code>Scale</code> (“EFO”)</p></li>
+<li><p><code>Lat</code> (“28.43”)</p></li>
+<li><p><code>Lon</code> (“-96.67”)</p></li>
+<li><p><code>Details</code> (“FACEBOOK PHOTOS…”)</p></li>
+</ul>
+<p>Extracting the first two lines used the same technique as previous. However, extracting the <code>Details</code> required a little creativity since many spread over several lines.</p>
+<p>To do this, I took the values of <code>tor_y_n</code> which marked the indices of the latitude/longitude positions. Then, I created vector <code>tor_z_n</code> to identify all “^\s+” elements in the original vector, <code>tor_raw</code>. With this, I was able to identify the first “^\s+” index following the latitude/longitude line, <code>t_a</code> and then take the very next index, <code>t_b</code>.</p>
+<p>Apologies for the non-descriptive names; I was lacking ingenuity.</p>
+<p>With <code>t_a</code> and <code>t_b</code>, I used <code>map2</code> through <code>tor_raw</code> to extract each subset. From that point there was some cleaning to bring the lines together as needed. If you have any better (even if slower, but more creative), I would love to hear them! I may have tried to get too creative with this task.</p>
+The regex was very similar to the <code>rain</code> regex as most items were evenly delimited. <br> <br>
+<p>
+<button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
+<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Session information
+</button>
+</p>
+<div id="workflowr-sessioninfo" class="collapse">
+<pre class="r"><code>devtools::session_info()</code></pre>
+<pre><code>─ Session info ──────────────────────────────────────────────────────────
+ setting  value                       
+ version  R version 3.5.2 (2018-12-20)
+ os       Ubuntu 16.04.5 LTS          
+ system   x86_64, linux-gnu           
+ ui       X11                         
+ language (EN)                        
+ collate  C.UTF-8                     
+ ctype    C.UTF-8                     
+ tz       Etc/UTC                     
+ date     2019-03-01                  
+
+─ Packages ──────────────────────────────────────────────────────────────
+ package     * version date       lib source        
+ assertthat    0.2.0   2017-04-11 [1] RSPM (R 3.5.2)
+ backports     1.1.3   2018-12-14 [1] RSPM (R 3.5.2)
+ callr         3.1.1   2018-12-21 [1] RSPM (R 3.5.2)
+ cli           1.0.1   2018-09-25 [1] RSPM (R 3.5.2)
+ crayon        1.3.4   2017-09-16 [1] RSPM (R 3.5.2)
+ desc          1.2.0   2018-05-01 [1] RSPM (R 3.5.2)
+ devtools      2.0.1   2018-10-26 [1] RSPM (R 3.5.2)
+ digest        0.6.18  2018-10-10 [1] RSPM (R 3.5.2)
+ dplyr       * 0.8.0.1 2019-02-15 [1] RSPM (R 3.5.2)
+ evaluate      0.13    2019-02-12 [1] RSPM (R 3.5.2)
+ fs            1.2.6   2018-08-23 [1] RSPM (R 3.5.2)
+ git2r         0.24.0  2019-01-07 [1] RSPM (R 3.5.2)
+ glue        * 1.3.0   2018-07-17 [1] RSPM (R 3.5.2)
+ here          0.1     2017-05-28 [1] RSPM (R 3.5.2)
+ htmltools     0.3.6   2017-04-28 [1] RSPM (R 3.5.2)
+ knitr         1.21    2018-12-10 [1] RSPM (R 3.5.2)
+ lubridate   * 1.7.4   2018-04-11 [1] RSPM (R 3.5.2)
+ magrittr      1.5     2014-11-22 [1] RSPM (R 3.5.2)
+ memoise       1.1.0   2017-04-21 [1] RSPM (R 3.5.2)
+ pillar        1.3.1   2018-12-15 [1] RSPM (R 3.5.2)
+ pkgbuild      1.0.2   2018-10-16 [1] RSPM (R 3.5.2)
+ pkgconfig     2.0.2   2018-08-16 [1] RSPM (R 3.5.2)
+ pkgload       1.0.2   2018-10-29 [1] RSPM (R 3.5.2)
+ prettyunits   1.0.2   2015-07-13 [1] RSPM (R 3.5.2)
+ processx      3.2.1   2018-12-05 [1] RSPM (R 3.5.2)
+ ps            1.3.0   2018-12-21 [1] RSPM (R 3.5.2)
+ purrr       * 0.3.0   2019-01-27 [1] RSPM (R 3.5.2)
+ R6            2.4.0   2019-02-14 [1] RSPM (R 3.5.2)
+ Rcpp          1.0.0   2018-11-07 [1] RSPM (R 3.5.2)
+ remotes       2.0.2   2018-10-30 [1] RSPM (R 3.5.2)
+ rlang         0.3.1   2019-01-08 [1] RSPM (R 3.5.2)
+ rmarkdown     1.11    2018-12-08 [1] RSPM (R 3.5.2)
+ rprojroot     1.3-2   2018-01-03 [1] RSPM (R 3.5.2)
+ sessioninfo   1.1.1   2018-11-05 [1] RSPM (R 3.5.2)
+ stringi       1.3.1   2019-02-13 [1] RSPM (R 3.5.2)
+ stringr     * 1.4.0   2019-02-10 [1] RSPM (R 3.5.2)
+ tibble      * 2.0.1   2019-01-12 [1] RSPM (R 3.5.2)
+ tidyselect    0.2.5   2018-10-11 [1] RSPM (R 3.5.2)
+ usethis       1.4.0   2018-08-14 [1] RSPM (R 3.5.2)
+ whisker       0.3-2   2013-04-28 [1] RSPM (R 3.5.2)
+ withr         2.1.2   2018-03-15 [1] RSPM (R 3.5.2)
+ workflowr     1.2.0   2019-02-14 [1] RSPM (R 3.5.2)
+ xfun          0.5     2019-02-20 [1] RSPM (R 3.5.2)
+ yaml          2.2.0   2018-07-25 [1] RSPM (R 3.5.2)
+
+[1] /home/rstudio-user/R/x86_64-pc-linux-gnu-library/3.5
+[2] /opt/R/3.5.2/lib/R/library</code></pre>
+</div>
+</div>
+</div>
+
+
+<!-- Adjust MathJax settings so that all math formulae are shown using
+TeX fonts only; see
+http://docs.mathjax.org/en/latest/configuration.html.  This will make
+the presentation more consistent at the cost of the webpage sometimes
+taking slightly longer to load. Note that this only works because the
+footer is added to webpages before the MathJax javascript. -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

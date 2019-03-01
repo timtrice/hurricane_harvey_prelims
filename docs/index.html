@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Hurricane Harvey Post Storm Report</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Hurricane Harvey Preliminary Reports</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">The Report</a>
+</li>
+<li>
+  <a href="data.html">The Data</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/timtrice/hurricane_harvey_prelims">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<!-- Add a small amount of space between sections. -->
+<style type="text/css">
+div.section {
+  padding-top: 12px;
+}
+</style>
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Hurricane Harvey Post Storm Report</h1>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#hurricane-harvey">Hurricane Harvey</a><ul>
+<li><a href="#barometric-pressure">Barometric Pressure</a></li>
+<li><a href="#wind">Wind</a></li>
+<li><a href="#rain">Rain</a></li>
+<li><a href="#tornadoes">Tornadoes</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>
+<button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+</button>
+</p>
+<div id="workflowr-report" class="collapse">
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#summary">Summary</a>
+</li>
+<li>
+<a data-toggle="tab" href="#report"> Report <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
+</li>
+<li>
+<a data-toggle="tab" href="#versions">Past versions</a>
+</li>
+</ul>
+<div class="tab-content">
+<div id="summary" class="tab-pane fade in active">
+<p>
+<strong>Last updated:</strong> 2019-03-01
+</p>
+<p>
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
+</p>
+<p>
+<strong>Knit directory:</strong> <code>project/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
+</p>
+<p>
+This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis was created with <a
+  href="https://github.com/jdblischak/workflowr">workflowr</a> (version 1.2.0). The <em>Report</em> tab describes the reproducibility checks that were applied when the results were created. The <em>Past versions</em> tab lists the development history.
+</p>
+<hr>
+</div>
+<div id="report" class="tab-pane fade">
+<div id="workflowr-checks" class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
+</p>
+</div>
+<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongEnvironmentstrongempty"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Environment:</strong> empty </a>
+</p>
+</div>
+<div id="strongEnvironmentstrongempty" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! The global environment was empty. Objects defined in the global environment can affect the analysis in your R Markdown file in unknown ways. For reproduciblity it’s best to always run the code in an empty environment.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSeedstrongcodesetseed20181125code"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Seed:</strong> <code>set.seed(20181125)</code> </a>
+</p>
+</div>
+<div id="strongSeedstrongcodesetseed20181125code" class="panel-collapse collapse">
+<div class="panel-body">
+<p>The command <code>set.seed(20181125)</code> was run prior to running the code in the R Markdown file. Setting a seed ensures that any results that rely on randomness, e.g. subsampling or permutations, are reproducible.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSessioninformationstrongrecorded"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Session information:</strong> recorded </a>
+</p>
+</div>
+<div id="strongSessioninformationstrongrecorded" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! Recording the operating system, R version, and package versions is critical for reproducibility.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongnone"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Cache:</strong> none </a>
+</p>
+</div>
+<div id="strongCachestrongnone" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Nice! There were no cached chunks for this analysis, so you can be confident that you successfully produced the results during this run.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomtimtricehurricaneharveyprelimstree494f749f6330bcdc7123c89e00c41b37097d1c55targetblank494f749a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/timtrice/hurricane_harvey_prelims/tree/494f749f6330bcdc7123c89e00c41b37097d1c55" target="_blank">494f749</a> </a>
+</p>
+</div>
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomtimtricehurricaneharveyprelimstree494f749f6330bcdc7123c89e00c41b37097d1c55targetblank494f749a" class="panel-collapse collapse">
+<div class="panel-body">
+<p>
+Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
+</p>
+<pre><code>
+Ignored files:
+    Ignored:    .Rhistory
+    Ignored:    .Rproj.user/
+
+</code></pre>
+<p>
+Note that any generated files, e.g. HTML, png, CSS, etc., are not included in this status report because it is ok for generated content to have uncommitted changes.
+</p>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</div>
+<div id="versions" class="tab-pane fade">
+
+<p>
+These are the previous versions of the R Markdown and HTML files. If you’ve configured a remote Git repository (see <code>?wflow_git_remote</code>), click on the hyperlinks in the table below to view them.
+</p>
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+File
+</th>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+<th>
+Message
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/timtrice/hurricane_harvey_prelims/blob/f3c3d16d7601b80790d69014b0728a0af3549bc8/analysis/index.Rmd" target="_blank">f3c3d16</a>
+</td>
+<td>
+Tim Trice
+</td>
+<td>
+2019-03-01
+</td>
+<td>
+Add report
+</td>
+</tr>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/timtrice/hurricane_harvey_prelims/blob/ea2b7df5198fc190f02342048de88beb40808159/analysis/index.Rmd" target="_blank">ea2b7df</a>
+</td>
+<td>
+Tim Trice
+</td>
+<td>
+2018-11-25
+</td>
+<td>
+Start workflowr project.
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<p>On August 26, 2017, Hurricane Harvey made landfall along the central Texas gulf coast as a category four hurricane. The storm weakened but remained stationary in southeast Texas spawing dozens of tornadoes and dropping over 30 inches of rain in many locations with isolated amounts of over 50 inches.</p>
+<p>Harvey was the first major hurricane to strike the Texas coast since Hurricane Rita in 2005; the first category four hurricane to make landfall since Hurricane Bret in 1999.</p>
+<p>In early September, National Weather Service (NWS) offices in Brownsville, Corpus Christi, San Antonio, and Houston, Texas, and Lake Charles, Louisiana released preliminary data reports on Hurricane Harvey. The following data has been extracted from those reports.</p>
+<div id="hurricane-harvey" class="section level2">
+<h2>Hurricane Harvey</h2>
+<p>Advisories were initiated on Potential Tropical Cyclone Nine on the morning of August 17. Shortly thereafter, the cyclone was upgraded to a tropical storm but would not see additional strengthening as it moved into the eastern Caribbean Sea.</p>
+<p>By the evening of August 19, Harvey had degenerated from a cyclone to a tropical wave (no closed center of circulation) and the National Hurricane Center discontinued issuing advisories on the system.</p>
+<p>The full track of Hurricane Harvey is shown in <a href="#fig:plot-al092017">Figure 1</a>.</p>
+<pre><code>Coordinate system already present. Adding new coordinate system, which will replace the existing one.</code></pre>
+<div class="figure" style="text-align: center">
+<img src="figure/index.Rmd/plot-al092017-1.png" alt="Hurricane Harvey had two life cycles as a tropical cyclone; the first in the western Atlantic and eastern Caribbean, and the second in the Gulf of Mexico." width="672" />
+<p class="caption">
+Hurricane Harvey had two life cycles as a tropical cyclone; the first in the western Atlantic and eastern Caribbean, and the second in the Gulf of Mexico.
+</p>
+</div>
+<p>By midday August 23, the remnants of Harvey had regenerated back into a tropical depression while in the southern Gulf of Mexico. The NHC began reissuing advisories on the system.</p>
+<p><a href="#fig:plot-al092017-gulf">Figure 2</a> shows the track of Hurricane Harvey after regeneration in the Gulf of Mexico. Once the cyclone redeveloped, it quickly began strengthening as it moved north and north-northwest towards the central Texas coastline. <a href="#fig:plot-al092017-pres">Figure 3</a> and <a href="#fig:plot-al092017-wind">Figure 5</a> show how the pressure and wind of Harvey changed rapidly as the storm intensified.</p>
+<pre><code>Coordinate system already present. Adding new coordinate system, which will replace the existing one.</code></pre>
+<div class="figure" style="text-align: center">
+<img src="figure/index.Rmd/plot-al092017-gulf-1.png" alt="Hurricane Harvey track in the Gulf of Mexico where the system intensified quickly into a category four hurricane." width="672" />
+<p class="caption">
+Hurricane Harvey track in the Gulf of Mexico where the system intensified quickly into a category four hurricane.
+</p>
+</div>
+<div id="barometric-pressure" class="section level3">
+<h3>Barometric Pressure</h3>
+<p>Barometric pressure is the lowest atmospheric pressure either estimated or recorded in the center of a tropical cyclone. Generally speaking, the lower the barometric pressure, the stronger the cyclone.</p>
+<p><a href="#fig:plot-al092017-pres">Figure 3</a> shows the barometric pressure observations over 6-hour intervals during the life cycle of the cyclone. The gap from August 21 to August 23 is due to the system temporarily losing cyclone characteristics in the Caribbean Sea.</p>
+<div class="figure" style="text-align: center">
+<img src="figure/index.Rmd/plot-al092017-pres-1.png" alt="Hurricane Harvey central barometric pressure observations during the life cycle of the tropical cyclone." width="672" />
+<p class="caption">
+Hurricane Harvey central barometric pressure observations during the life cycle of the tropical cyclone.
+</p>
+</div>
+<p><a href="#fig:plot-pres">Figure 4</a> shows the lowest pressure observations as reported by the respective local NWS offices. As expected, the lowest values were recorded just north of Corpus Christi, Texas near the Rockport area where some locations reported pressure in the 940’s (mb). <a href="#tbl:tbl-pres">Table 1</a> shows the five lowest pressure observations recorded.</p>
+<pre><code>Coordinate system already present. Adding new coordinate system, which will replace the existing one.</code></pre>
+<div class="figure" style="text-align: center">
+<img src="figure/index.Rmd/plot-pres-1.png" alt="Rockport, Texas recorded the lowest pressure observations. Many observations are incomplete due to weather stations losing power or equipment during the storm." width="672" />
+<p class="caption">
+Rockport, Texas recorded the lowest pressure observations. Many observations are incomplete due to weather stations losing power or equipment during the storm.
+</p>
+</div>
+<p>The minimum pressure observed was 941.8mb at RCPT in Rockport, TX. Official landfall occurred at 06:00 UTC on the morning of August 26, 2017; 2 1/2 hours after the RCPT observation. This is approximately the same reported minimum central pressure listed by the National Hurricane Center (NHC) in <a href="http://www.nhc.noaa.gov/archive/2017/al09/al092017.public_a.023.shtml?">Public Advisory 23A</a> which suggests pressure values may have been lower as the storm made passed over the station.</p>
+<table>
+<caption>Five lowest pressure observations (mb).</caption>
+<thead>
+<tr class="header">
+<th align="left">ID</th>
+<th align="left">Station</th>
+<th align="right">Lat</th>
+<th align="right">Lon</th>
+<th align="right">Pres</th>
+<th align="left">PresDT</th>
+<th align="left">PresRmks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">RCPT2</td>
+<td align="left">ROCKPORT</td>
+<td align="right">28.02</td>
+<td align="right">-97.05</td>
+<td align="right">941.8</td>
+<td align="left">2017-08-26 03:36:00</td>
+<td align="left">I</td>
+</tr>
+<tr class="even">
+<td align="left">CPNT2</td>
+<td align="left">COPANO BAY</td>
+<td align="right">28.11</td>
+<td align="right">-97.02</td>
+<td align="right">944.0</td>
+<td align="left">2017-08-26 04:00:00</td>
+<td align="left">I</td>
+</tr>
+<tr class="odd">
+<td align="left">RTAT2</td>
+<td align="left">PORT ARANSAS</td>
+<td align="right">27.84</td>
+<td align="right">-97.07</td>
+<td align="right">959.3</td>
+<td align="left">2017-08-26 02:24:00</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="left">PTAT2</td>
+<td align="left">PORT ARANSAS CMAN</td>
+<td align="right">27.82</td>
+<td align="right">-97.05</td>
+<td align="right">961.7</td>
+<td align="left">2017-08-26 02:00:00</td>
+<td align="left">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">ANPT2</td>
+<td align="left">PORT ARANSAS SENTINEL</td>
+<td align="right">27.83</td>
+<td align="right">-97.04</td>
+<td align="right">964.0</td>
+<td align="left">2017-08-26 02:02:00</td>
+<td align="left">I</td>
+</tr>
+</tbody>
+</table>
+<p>The “I” in <code>PresRmks</code> denotes the observation is incomplete.</p>
+<p>Many stations lost equipment during the height of the storm, leading to many incomplete data observations (at least 70).</p>
+</div>
+<div id="wind" class="section level3">
+<h3>Wind</h3>
+<p><a href="#fig:plot-al092017-wind">Figure 5</a> shows the quick increase in wind during Harvey’s track over the Gulf of Mexico. It strengthened from a tropical depression to a category four hurricane in 60 hours; not record-breaking but quite impressive nonetheless.</p>
+<div class="figure" style="text-align: center">
+<img src="figure/index.Rmd/plot-al092017-wind-1.png" alt="Harvey strengthened from a tropical depression to category four hurricane in just over two days once in the Gulf of Mexico." width="672" />
+<p class="caption">
+Harvey strengthened from a tropical depression to category four hurricane in just over two days once in the Gulf of Mexico.
+</p>
+</div>
+<p><a href="#fig:plot-slp-df-wind">Figure 6</a> shows the plot of all maximum wind values during Hurricane Harvey. As with barometric pressure, the highest wind values were recorded where Harvey made landfall but drop significantly at nearby locations.</p>
+<pre><code>Coordinate system already present. Adding new coordinate system, which will replace the existing one.</code></pre>
+<div class="figure" style="text-align: center">
+<img src="figure/index.Rmd/plot-slp-df-wind-1.png" alt="Maximum sustained wind observations as reported by weather stations during Hurricane Harvey." width="672" />
+<p class="caption">
+Maximum sustained wind observations as reported by weather stations during Hurricane Harvey.
+</p>
+</div>
+<p>The highest wind value was recorded at ANPT2 several hours prior to the center of the hurricane moving ashore. NWS CRP (Corpus Christi) reports,</p>
+<blockquote>
+<p>ANPT2 SENTINEL STOPPED REPORTING AND MAY NOT HAVE RECORDED MAXIMUM EVENT VALUES</p>
+</blockquote>
+<table>
+<caption>Five highest wind observations (kts).</caption>
+<thead>
+<tr class="header">
+<th align="left">ID</th>
+<th align="left">Station</th>
+<th align="right">Lat</th>
+<th align="right">Lon</th>
+<th align="right">Wind</th>
+<th align="left">WindDT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">ANPT2</td>
+<td align="left">PORT ARANSAS SENTINEL</td>
+<td align="right">27.83</td>
+<td align="right">-97.04</td>
+<td align="right">96</td>
+<td align="left">2017-08-26 01:42:00</td>
+</tr>
+<tr class="even">
+<td align="left">NSFDOW</td>
+<td align="left"></td>
+<td align="right">28.08</td>
+<td align="right">-97.04</td>
+<td align="right">90</td>
+<td align="left">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">CPNT2</td>
+<td align="left">COPANO BAY</td>
+<td align="right">28.11</td>
+<td align="right">-97.02</td>
+<td align="right">89</td>
+<td align="left">2017-08-26 03:06:00</td>
+</tr>
+<tr class="even">
+<td align="left">FCMP</td>
+<td align="left"></td>
+<td align="right">28.08</td>
+<td align="right">-97.05</td>
+<td align="right">88</td>
+<td align="left">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">PTAT2</td>
+<td align="left">PORT ARANSAS CMAN</td>
+<td align="right">27.82</td>
+<td align="right">-97.05</td>
+<td align="right">83</td>
+<td align="left">2017-08-26 02:20:00</td>
+</tr>
+</tbody>
+</table>
+<p>In addition to ANPT2, RCPT2 (Rockport), MAXT2, RTAT2, MIST2 and MIRT2 all failed prior to the peak of the hurricane. XWLD failed when the pier housing the sensor was swept away.</p>
+<table>
+<caption>Select Wind observations.</caption>
+<thead>
+<tr class="header">
+<th align="left">ID</th>
+<th align="left">Station</th>
+<th align="right">Lat</th>
+<th align="right">Lon</th>
+<th align="right">Wind</th>
+<th align="right">WindDir</th>
+<th align="left">WindDT</th>
+<th align="left">WindRmks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">ANPT2</td>
+<td align="left">PORT ARANSAS SENTINEL</td>
+<td align="right">27.83</td>
+<td align="right">-97.04</td>
+<td align="right">96</td>
+<td align="right">264</td>
+<td align="left">2017-08-26 01:42:00</td>
+<td align="left">I</td>
+</tr>
+<tr class="even">
+<td align="left">MAXT2</td>
+<td align="left">COPANO EAST</td>
+<td align="right">28.13</td>
+<td align="right">-97.03</td>
+<td align="right">73</td>
+<td align="right">20</td>
+<td align="left">2017-08-26 02:00:00</td>
+<td align="left">I</td>
+</tr>
+<tr class="odd">
+<td align="left">RCPT2</td>
+<td align="left">ROCKPORT</td>
+<td align="right">28.02</td>
+<td align="right">-97.05</td>
+<td align="right">59</td>
+<td align="right">17</td>
+<td align="left">2017-08-26 01:54:00</td>
+<td align="left">I</td>
+</tr>
+<tr class="even">
+<td align="left">MIST2</td>
+<td align="left">ARANSAS SHIP CHANNEL</td>
+<td align="right">27.83</td>
+<td align="right">-97.05</td>
+<td align="right">57</td>
+<td align="right">20</td>
+<td align="left">2017-08-25 22:00:00</td>
+<td align="left">I</td>
+</tr>
+<tr class="odd">
+<td align="left">RTAT2</td>
+<td align="left">PORT ARANSAS</td>
+<td align="right">27.84</td>
+<td align="right">-97.07</td>
+<td align="right">50</td>
+<td align="right">354</td>
+<td align="left">2017-08-25 22:42:00</td>
+<td align="left">I</td>
+</tr>
+<tr class="even">
+<td align="left">XWLD</td>
+<td align="left">WEATHERFLOW WILDCAT PORTLAND</td>
+<td align="right">27.86</td>
+<td align="right">-97.32</td>
+<td align="right">48</td>
+<td align="right">298</td>
+<td align="left">2017-08-26 03:55:00</td>
+<td align="left">I</td>
+</tr>
+<tr class="odd">
+<td align="left">MIRT2</td>
+<td align="left">MATAGORDA ISLAND RAWS</td>
+<td align="right">28.12</td>
+<td align="right">-96.80</td>
+<td align="right">44</td>
+<td align="right">59</td>
+<td align="left">2017-08-25 23:12:00</td>
+<td align="left">I</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="rain" class="section level3">
+<h3>Rain</h3>
+<p>The story of Hurricane Harvey will always center around the significant flooding that took place as the hurricane weakened and stalled in southeast Texas. Harvey dropped record rainfall amounts across broad areas of southeast Texas turning highways into rivers and neighborhoods into lakes.</p>
+<pre><code>Coordinate system already present. Adding new coordinate system, which will replace the existing one.</code></pre>
+<div class="figure" style="text-align: center">
+<img src="figure/index.Rmd/plot-rain-1.png" alt="Several locations across southeast Texas recorded over 30&quot; of rain with many isolated amounts of 40-50 inches." width="672" />
+<p class="caption">
+Several locations across southeast Texas recorded over 30&quot; of rain with many isolated amounts of 40-50 inches.
+</p>
+</div>
+<p>Though the news focus of the flooding was centered in the Houston area (Harris County), the largest rainfall amounts were recorded in Chambers, Brazoria, Liberty and Jefferson counties.</p>
+<table>
+<caption>Top 5 Rainfall Amounts</caption>
+<thead>
+<tr class="header">
+<th align="left">Location</th>
+<th align="left">County</th>
+<th align="left">Station</th>
+<th align="right">Rain</th>
+<th align="right">Lat</th>
+<th align="right">Lon</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">FRIENDSWOOD</td>
+<td align="left">GALVESTON</td>
+<td align="left"></td>
+<td align="right">56.00</td>
+<td align="right">29.50</td>
+<td align="right">-95.20</td>
+</tr>
+<tr class="even">
+<td align="left">3 ENE SANTA FE</td>
+<td align="left">GALVESTON</td>
+<td align="left"></td>
+<td align="right">54.77</td>
+<td align="right">29.39</td>
+<td align="right">-95.05</td>
+</tr>
+<tr class="odd">
+<td align="left">2 W FRIENDSWOOD</td>
+<td align="left">GALVESTON</td>
+<td align="left"></td>
+<td align="right">54.00</td>
+<td align="right">29.51</td>
+<td align="right">-95.22</td>
+</tr>
+<tr class="even">
+<td align="left">3 S LEAGUE CITY</td>
+<td align="left">GALVESTON</td>
+<td align="left"></td>
+<td align="right">52.87</td>
+<td align="right">29.43</td>
+<td align="right">-95.11</td>
+</tr>
+<tr class="odd">
+<td align="left">2 NW WEBSTER</td>
+<td align="left">HARRIS</td>
+<td align="left"></td>
+<td align="right">52.30</td>
+<td align="right">29.55</td>
+<td align="right">-95.14</td>
+</tr>
+</tbody>
+</table>
+<p>The text reports contain a Section D for Inland Flooding. Unfortunately at this time only the San Antonion/Austin NWS office have provided more info; generally river flooding and low water crossings.</p>
+</div>
+<div id="tornadoes" class="section level3">
+<h3>Tornadoes</h3>
+<p>There are 24 tornado observations for Hurricane Harvey. However, some observations may be for the same tornado. For example, there are two observations for a tornado in Fort Bend county with the same <code>Lat</code>, <code>Lat</code> and <code>Date</code> value; only <code>Details</code> is different.</p>
+<pre><code>Coordinate system already present. Adding new coordinate system, which will replace the existing one.</code></pre>
+<div class="figure" style="text-align: center">
+<img src="figure/index.Rmd/plot-tors-1.png" alt="All tornadoes generated from Hurricane Harvey were relatively weak, as is typical of tropical cyclones." width="672" />
+<p class="caption">
+All tornadoes generated from Hurricane Harvey were relatively weak, as is typical of tropical cyclones.
+</p>
+</div>
+<p><a href="#tbl:tbl-tors">Table 5</a> shows all tornado observations during the event from each of the NWS offices. <a href="#tab:efs">Table Six</a> identifies wind range values for <code>Scale</code>.</p>
+<table>
+<caption>Tornado Remarks, Hurricane Harvey</caption>
+<thead>
+<tr class="header">
+<th align="left">Location</th>
+<th align="left">CountY</th>
+<th align="left">Day</th>
+<th align="left">Time</th>
+<th align="left">Scale</th>
+<th align="right">Lat</th>
+<th align="right">Lon</th>
+<th align="left">Date</th>
+<th align="left">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">4 NNE SEADRIFT</td>
+<td align="left">CALHOUN</td>
+<td align="left">25</td>
+<td align="left">2114</td>
+<td align="left">EF0</td>
+<td align="right">28.43</td>
+<td align="right">-96.67</td>
+<td align="left">2017-08-25 21:14:00</td>
+<td align="left">FACEBOOK PHOTOS AND VIDEO SHOWED A BRIEF TORNADO TOUCHED DOWN ON GATES ROAD NEAR SEADRIFT. A SHED AND CARPORT WERE DESTROYED AND A FEW TREES WERE BLOWN DOWN. RATED EF0.</td>
+</tr>
+<tr class="even">
+<td align="left">9 NE GALVESTON</td>
+<td align="left">GALVESTON</td>
+<td align="left">25</td>
+<td align="left">1923</td>
+<td align="left">EF0</td>
+<td align="right">29.22</td>
+<td align="right">-94.89</td>
+<td align="left">2017-08-25 19:23:00</td>
+<td align="left">PUBLIC REPORTS A FUNNEL CLOUD AND A METAL FENCE DAMAGED NEAR FERRY RD IN GALVESTON</td>
+</tr>
+<tr class="odd">
+<td align="left">2 W LIVERPOOL</td>
+<td align="left">BRAZORIA</td>
+<td align="left">26</td>
+<td align="left">0428</td>
+<td align="left">EF0</td>
+<td align="right">29.29</td>
+<td align="right">-95.31</td>
+<td align="left">2017-08-26 04:28:00</td>
+<td align="left">AN EF-0 TORNADO TOOK DOWN 4 POWER POLES ON HIGHWAY 35 ALONG WITH SEVERAL TREES NEAR THE GULF COAST SPEEDWAY. THE TORNADO THEN TRAVELED ACROSS GENERALLY OPEN FIELD BEFORE DAMAGING SOME BARNS AND OUTBUILDINGS AS WELL AS TREES ON COUNTY ROAD 511.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Enhanced Fujita Scale</caption>
+<thead>
+<tr class="header">
+<th align="left">Scale</th>
+<th align="left">WindMPH</th>
+<th align="left">WindKTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">EF0</td>
+<td align="left">65-85</td>
+<td align="left">55-74</td>
+</tr>
+<tr class="even">
+<td align="left">EF1</td>
+<td align="left">86-110</td>
+<td align="left">75-96</td>
+</tr>
+<tr class="odd">
+<td align="left">EF2</td>
+<td align="left">111-135</td>
+<td align="left">97-117</td>
+</tr>
+<tr class="even">
+<td align="left">EF3</td>
+<td align="left">136-165</td>
+<td align="left">118-143</td>
+</tr>
+<tr class="odd">
+<td align="left">EF4</td>
+<td align="left">166-200</td>
+<td align="left">144-174</td>
+</tr>
+<tr class="even">
+<td align="left">EF5</td>
+<td align="left">&gt;200</td>
+<td align="left">&gt;175</td>
+</tr>
+</tbody>
+</table>
+<br> <br>
+<p>
+<button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
+<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Session information
+</button>
+</p>
+<div id="workflowr-sessioninfo" class="collapse">
+<pre class="r"><code>devtools::session_info()</code></pre>
+<pre><code>Warning in system(&quot;timedatectl&quot;, intern = TRUE): running command
+&#39;timedatectl&#39; had status 1</code></pre>
+<pre><code>─ Session info ──────────────────────────────────────────────────────────
+ setting  value                       
+ version  R version 3.5.2 (2018-12-20)
+ os       Ubuntu 16.04.5 LTS          
+ system   x86_64, linux-gnu           
+ ui       X11                         
+ language (EN)                        
+ collate  C.UTF-8                     
+ ctype    C.UTF-8                     
+ tz       Etc/UTC                     
+ date     2019-03-01                  
+
+─ Packages ──────────────────────────────────────────────────────────────
+ package           * version      date       lib
+ assertthat          0.2.0        2017-04-11 [1]
+ backports           1.1.3        2018-12-14 [1]
+ broom               0.5.1        2018-12-05 [1]
+ callr               3.1.1        2018-12-21 [1]
+ cellranger          1.1.0        2016-07-27 [1]
+ cli                 1.0.1        2018-09-25 [1]
+ colorspace          1.4-0        2019-01-13 [1]
+ crayon              1.3.4        2017-09-16 [1]
+ desc                1.2.0        2018-05-01 [1]
+ devtools            2.0.1        2018-10-26 [1]
+ digest              0.6.18       2018-10-10 [1]
+ dplyr             * 0.8.0.1      2019-02-15 [1]
+ evaluate            0.13         2019-02-12 [1]
+ forcats           * 0.4.0        2019-02-17 [1]
+ fs                  1.2.6        2018-08-23 [1]
+ generics            0.0.2        2018-11-29 [1]
+ ggplot2           * 3.1.0        2018-10-25 [1]
+ ggrepel           * 0.8.0        2018-05-09 [1]
+ git2r               0.24.0       2019-01-07 [1]
+ glue                1.3.0        2018-07-17 [1]
+ gtable              0.2.0        2016-02-26 [1]
+ haven               2.1.0        2019-02-19 [1]
+ here                0.1          2017-05-28 [1]
+ highr               0.7          2018-06-09 [1]
+ hms                 0.4.2        2018-03-10 [1]
+ htmltools           0.3.6        2017-04-28 [1]
+ httr                1.4.0        2018-12-11 [1]
+ jsonlite            1.6          2018-12-07 [1]
+ knitr             * 1.21         2018-12-10 [1]
+ labeling            0.3          2014-08-23 [1]
+ lattice             0.20-38      2018-11-04 [2]
+ lazyeval            0.2.1        2017-10-29 [1]
+ lubridate         * 1.7.4        2018-04-11 [1]
+ magrittr            1.5          2014-11-22 [1]
+ memoise             1.1.0        2017-04-21 [1]
+ modelr              0.1.4        2019-02-18 [1]
+ munsell             0.5.0        2018-06-12 [1]
+ nlme                3.1-137      2018-04-07 [2]
+ pillar              1.3.1        2018-12-15 [1]
+ pkgbuild            1.0.2        2018-10-16 [1]
+ pkgconfig           2.0.2        2018-08-16 [1]
+ pkgload             1.0.2        2018-10-29 [1]
+ plyr                1.8.4        2016-06-08 [1]
+ prettyunits         1.0.2        2015-07-13 [1]
+ processx            3.2.1        2018-12-05 [1]
+ ps                  1.3.0        2018-12-21 [1]
+ purrr             * 0.3.0        2019-01-27 [1]
+ R6                  2.4.0        2019-02-14 [1]
+ RColorBrewer        1.1-2        2014-12-07 [1]
+ Rcpp                1.0.0        2018-11-07 [1]
+ readr             * 1.3.1        2018-12-21 [1]
+ readxl              1.3.0        2019-02-15 [1]
+ remotes             2.0.2        2018-10-30 [1]
+ rlang               0.3.1        2019-01-08 [1]
+ rmarkdown           1.11         2018-12-08 [1]
+ rnaturalearthdata   0.1.0        2017-02-21 [1]
+ rprojroot           1.3-2        2018-01-03 [1]
+ rrricanes         * 0.2.0-6.9001 2019-02-27 [1]
+ rrricanesdata     * 0.1.7        2019-02-27 [1]
+ rstudioapi          0.9.0        2019-01-09 [1]
+ rvest               0.3.2        2016-06-17 [1]
+ scales              1.0.0        2018-08-09 [1]
+ sessioninfo         1.1.1        2018-11-05 [1]
+ sp                  1.3-1        2018-06-05 [1]
+ stringi             1.3.1        2019-02-13 [1]
+ stringr           * 1.4.0        2019-02-10 [1]
+ tibble            * 2.0.1        2019-01-12 [1]
+ tidyr             * 0.8.2        2018-10-28 [1]
+ tidyselect          0.2.5        2018-10-11 [1]
+ tidyverse         * 1.2.1        2017-11-14 [1]
+ usethis             1.4.0        2018-08-14 [1]
+ whisker             0.3-2        2013-04-28 [1]
+ withr               2.1.2        2018-03-15 [1]
+ workflowr           1.2.0        2019-02-14 [1]
+ xfun                0.5          2019-02-20 [1]
+ xml2                1.2.0        2018-01-24 [1]
+ yaml                2.2.0        2018-07-25 [1]
+ source                             
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ CRAN (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ CRAN (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ CRAN (R 3.5.0)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ Github (ropensci/rrricanes@449bee6)
+ local                              
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+ RSPM (R 3.5.2)                     
+
+[1] /home/rstudio-user/R/x86_64-pc-linux-gnu-library/3.5
+[2] /opt/R/3.5.2/lib/R/library</code></pre>
+</div>
+</div>
+</div>
+
+
+<!-- Adjust MathJax settings so that all math formulae are shown using
+TeX fonts only; see
+http://docs.mathjax.org/en/latest/configuration.html.  This will make
+the presentation more consistent at the cost of the webpage sometimes
+taking slightly longer to load. Note that this only works because the
+footer is added to webpages before the MathJax javascript. -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
