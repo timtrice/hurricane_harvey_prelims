@@ -1,0 +1,343 @@
+---
+title: "Code"
+site: workflowr::wflow_site
+output: workflowr::wflow_html
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE, 
+  warning = FALSE, 
+  message = FALSE, 
+  error = FALSE, 
+  fig.align = "center"
+)
+```
+
+```{r code, include = FALSE}
+knitr::read_chunk(path = here::here("./code/02_parse_text.R"))
+```
+
+These text products are listed under the header ACUS74. They can be found on the [National Weather Service FTP server](ftp://tgftp.nws.noaa.gov/data/raw/ac/).
+
+The following reports were obtained:
+
+* [Brownsville, TX (BRO)](ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.kbro.psh.bro.txt)
+
+* [Corpus Christi, TX (CRP)](ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.kcrp.psh.crp.txt)
+
+* [Austin/San Antonion, TX (EWX)](ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.kewx.psh.ewx.txt)
+
+* [Houston, TX (HGX)](ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.khgx.psh.hgx.txt)
+
+* [Lake Charles, LA (LCH)](ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.klch.psh.lch.txt)
+
+* [New Orleans, LA (LIX)](ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.klix.psh.lix.txt)
+
+The links above point to the latest ACUS74 product issued by the respective NWS office. Therefore, it is possible that by the time you have read this article, the content of the text product has changed. Because of this, the rds data files have been saved to this website's [GitHub repository](https://github.com/timtrice/hurricane_harvey_prelims/tree/0c55d581f268acd1be4f8034ac6da5c35ce85a26/data).
+
+All times reported are in UTC. Pressure observations are in millibars. Wind and Gust observations are in knots.
+
+## Libraries
+
+The following libraries were used in this article:
+
+```{r ref.label = "libraries"}
+```
+
+## Data
+
+To load the data, I just put the links into a named list. I originally had considered keeping the data separate by NWS office but determined this was not necessary. 
+
+The code below looks for the data file mentioned earlier and, if it exists, loads the `txt` vector. Otherwise, each of the text products will be collected for parsing.
+
+```{r ref.label = "load-data"}
+```
+
+Each text product contains several sections:
+
+* Section A. Lowest Sea Level Pressure/Maximum Sustained Winds and Peak Gusts
+
++ Non-METAR Observations
+
+* Section B. Marine Observations
+
+* Section C. Storm Total Rainfall
+
+* Section D. Inland Flooding (not collected)
+
+* Section E. Maximum Storm Surge and Storm Tide (not collected)
+
+* Section F. Tornadoes
+
+* Section G. Storm Impacts by County (not collected)
+
+Not all sections will contain data. For this article, all data collected was that which contained a latitude and longitude position.
+
+Each section contains a data header:
+
+```
+A. LOWEST SEA LEVEL PRESSURE/MAXIMUM SUSTAINED WINDS AND PEAK GUSTS
+---------------------------------------------------------------------
+METAR OBSERVATIONS...
+NOTE: ANEMOMETER HEIGHT IS 10 METERS AND WIND AVERAGING IS 2 MINUTES
+---------------------------------------------------------------------
+LOCATION  ID    MIN    DATE/     MAX      DATE/     PEAK    DATE/
+LAT  LON        PRES   TIME      SUST     TIME      GUST    TIME
+DEG DECIMAL     (MB)   (UTC)     (KT)     (UTC)     (KT)    (UTC)
+---------------------------------------------------------------------
+```
+
+```
+B. MARINE OBSERVATIONS...
+NOTE: ANEMOMETER HEIGHT IN METERS AND WIND AVERAGING PERIOD IN
+MINUTES INDICATED UNDER MAXIMUM SUSTAINED WIND IF KNOWN
+---------------------------------------------------------------------
+LOCATION  ID    MIN    DATE/     MAX      DATE/     PEAK    DATE/
+LAT  LON        PRES   TIME      SUST     TIME      GUST    TIME
+DEG DECIMAL     (MB)   (UTC)     (KT)     (UTC)     (KT)    (UTC)
+---------------------------------------------------------------------
+```
+
+Additionally, a subsection of A exists:
+
+```
+NON-METAR OBSERVATIONS... 
+NOTE: ANEMOMETER HEIGHT IN METERS AND WIND AVERAGING PERIOD IN
+MINUTES INDICATED UNDER MAXIMUM SUSTAINED WIND IF KNOWN
+---------------------------------------------------------------------
+LOCATION  ID    MIN    DATE/     MAX      DATE/     PEAK    DATE/
+LAT  LON        PRES   TIME      SUST     TIME      GUST    TIME
+DEG DECIMAL     (MB)   (UTC)     (KT)     (UTC)     (KT)    (UTC)
+---------------------------------------------------------------------
+```
+
+This subsection was added in as part of Sectoin A but is indistinguishable in the parsed dataset.
+
+Observation examples are inluded in the relevant section below.
+
+Numerous observations contain remarks (identified in the dataset by `ends_with("Rmks")`). Every section contains a Remarks footer; however, this may not be populated and, therefore, not every observation with a `.Rmks` variable would have additional Remarks listed in the text product. The additional Remarks were not collected.
+
+The `.Rmks` legend is identified in the footer of each text product as:
+
+* "I" - Incomplete data
+
+* "E" - Estimated
+
+All `.Rmks` variables in the datasets are either *NA* or "I".
+
+Sections A and B may also contain additional anenometer height and wind-averaging period variables on a third line. This data was not collected but could easily have been; I did not feel it was relevant to this article. 
+
+### Sea Level Pressure and Marine Observations
+
+A typical observation in Section A or B will look like the following:
+
+```
+RCPT2-ROCKPORT                                                      
+28.02  -97.05   941.8 26/0336 I 017/059  26/0154 I 016/094 26/0148 I
+```
+
+There are 15 variables in the observation above (in order as they appear, with the example text):
+
+* `ID` (RCPT2)
+
+* `Station` (ROCKPORT)
+
+* `Lat` (28.02)
+
+* `Lon` (-97.05)
+
+* `Pres` (941.8) [barometric pressure, mb]
+
+* `PresDT` (26/0336) [date/time of `Pres` observation, UTC]
+
+* `PresRmks` (I) [incomplete pressure observation]
+
+* `Wind`, `WindDir` (017/059) [wind speed, kts, and wind direction]
+
+* `WindDT` (26/0154) [date/time of preceeding wind observation, UTC]
+
+* `WindRmks` (I) [incomplete wind observation]
+
+* `Gust`, `GustDir` (016/094) [maximum gust, kts, and direction]
+
+* `GustDT` (26/0148) [date/time of preceeding gust observation, UTC]
+
+* `GustRmks` (I) [incomplete gust observation]
+
+Every observation has an empty line before and after which can be used as a delimiter to spilt observations.
+
+To extract the relevant sections, I loop through the text products (`txt`) and identify where Section A and Section C begins. With these numerical indices, I can extract both sections, assigning the subset to `slp_raw`. 
+
+```{r ref.label = "slp", echo = 3:4}
+```
+
+From there, I identify all vector elements that begin with a latitude and longitude field. I counted these values (`slp_n`) so that I know exactly how long my final results will be (and to check progress as I move along, making sure I haven't inadvertently removed anything).
+
+Once I know where the observation indices are (`slp_obs_n`) I can find the station identification by calculating `slp_obs_n - 1`; this gives me `slp_stations_n`. 
+
+```{r ref.label = "slp", echo = c(9:10, 13, 16), eval = FALSE}
+```
+
+Before merging the two vectors, I found some station values were not all the same length; I felt this would be beneficial with the regex. I create `slp_stations`, first trimming all values then finding the max length value. With the max length, I rounded up to the nearest ten and padded all all values to the right.
+
+The last bit of manipulation involved replacing the first "-", if available, with a "\\t" character. This also helped me make it easier to split variables `ID` and `Station` since `Station` would contain additional "-" characters.
+
+```{r ref.label = "slp", echo = 21:26, eval = FALSE}
+```
+
+Note that the code above split `ID` "TXCV-4" which would later be corrected.
+
+Finally, I subset `slp_obs` and then with `slp_stations` make vector `slp`.
+
+```{r ref.label = "slp", echo = 28:32, eval = FALSE}
+```
+
+Following is a look at the head of `slp`:
+
+```{r}
+head(slp, n = 5L)
+```
+
+#### ID [`ID`], Station [`Station`] (opt)
+
+Matching `ID` and `Station` is easier after switching the first "-" with a "\\t". `Station` is optional. To find the end of the string I simply looked for the latitude pattern that would follow. 
+
+```{r ref.label = "slp", echo = 47:48, eval = FALSE}
+```
+
+#### Latitude [`Lat`]
+
+Latitude was also very easy to extract. The pattern just looks for four digits with a decimal splitting in half.
+
+```{r ref.label = "slp", echo = 49:50, eval = FALSE}
+```
+
+#### Longitude [`Lon`]
+
+Extracting Longitude was a little bit more of a challenge. Most observations have a negative longitude value (since occurring in the northwestern hemisphere). This was accurately reflected in the text products; mostly. Some values did not contain the leading "-" such as `Station` "KEFD":
+
+```{r}
+slp[grep("^KEFD", slp)][2]
+```
+
+To accomodate the possibilities, I had to be loose with the number of digits expected in addition to making the negative sign optional.
+
+```{r ref.label = "slp", echo = 51:52, eval = FALSE}
+```
+
+#### Minimum Pressure [`Pres`] *opt*
+
+Expected pressure values would have a format like `\\d{3,4}\\.\\d{2}`. Some observations had values of "9999.0" which clearly were invalid (expected ranges were roughly between 940 and 1010). These would later be cleaned up.
+
+```{r ref.label = "slp", echo = 53:54, eval = FALSE}
+```
+
+#### Date/time of pressure observation [`PresDT`] *opt*
+
+`PresDT` was initially split to extract the date value first (`PresDTd`) followed by the "%h%m" value (`PresDThm`). The general format, "\\d{2}/\\d{4}" would not work primarily because many observations contained the text "MM" or "N/A". 
+
+Additionally, some observations also held the value "99/9999". This would be accepted by the default format but would fail when converting the values to a valid date/time variable. These would later be cleaned. 
+
+With this, I ended up being very generous with the regex.
+
+```{r ref.label = "slp", echo = 55:56, eval = FALSE}
+```
+
+#### Pressure remarks [`PresRmks`] *opt*
+
+As noted previously, some `Pres` variables may be incomplete for unknown reasons. These values would be indicated with the letter "I" as noted in the "RCPT2" example earlier.
+
+```{r ref.label = "slp", echo = 57:58, eval = FALSE}
+```
+
+#### Maximum sustained wind direction [`WindDir`], Maximum sustained winds (opt) [`Wind`]
+
+Variables `WindDir` and `Wind` were split with a "/" character. However, again, not all values were numeric as expected, such as "LOPL1":
+
+```{r}
+slp[grep("^LOPL1", slp)]
+```
+
+Invalid values such as "999" would later be marked as `NA`.
+
+```{r ref.label = "slp", echo = 59:60, eval = FALSE}
+```
+
+The remaining variables followed generally the same rules as similar variables above (i.e., `GustDir` for `WindDir`, `GustDT` for `WindDT`, etc.). The final `str_match` call brought all expected observations in order.
+
+```{r ref.label = "slp", echo = c(41:76), eval = FALSE}
+```
+
+### Rainfall
+
+Section C of the text products listed recorded rainfall observations across the Texas and Louisiana area. These observations were similar in format to those of pressure:
+
+```
+COLETO CREEK                 GOLIAD              CKDT2         9.42 I
+28.73  -97.17
+```
+
+The following fields were extracted:
+
+  * `Location` ("COLETO CREEK")
+  
+  * `Count` ("GOLIAD")
+  
+  * `Station` ("CKDT2") *opt*
+  
+  * `Rain` ("9.42")
+  
+  * `RainRmks` ("I")
+  
+  * `Lat` ("28.73")
+  
+  * `Lon` ("-97.17")
+
+Extracting these observations followed the same premise for that of `slp`; identifying the latitude lines then subsetting those indices and the previous indices and combining into a vector.
+
+Unlike `slp`, there were no surprises in cleaning this data. The regex used:
+
+```{r ref.label = "rain", echo = c(27:40), eval = FALSE}
+```
+
+### Tornadoes
+
+Section F lists reported tornadoes for each region of responsibility. Some NWS offices reported no tornado observations. Others, such as Houston, reported at least a dozen.
+
+An example observation is as follows:
+
+```
+4 NNE SEADRIFT               CALHOUN          25/2114          EF0   
+28.43  -96.67
+
+FACEBOOK PHOTOS AND VIDEO SHOWED A BRIEF TORNADO TOUCHED DOWN ON
+GATES ROAD NEAR SEADRIFT. A SHED AND CARPORT WERE DESTROYED AND A
+FEW TREES WERE BLOWN DOWN. RATED EF0. 
+```
+
+Each observation, again, was preceeded and proceeded by an empty line.
+
+  * `Location` ("4 NNE SEADRIFT")
+  
+  * `County` ("CALHOUN")
+  
+  * `Date` ("25/2114")
+  
+  * `Scale` ("EFO")
+  
+  * `Lat` ("28.43")
+  
+  * `Lon` ("-96.67")
+  
+  * `Details` ("FACEBOOK PHOTOS...")
+
+Extracting the first two lines used the same technique as previous. However, extracting the `Details` required a little creativity since many spread over several lines.
+
+To do this, I took the values of `tor_y_n` which marked the indices of the latitude/longitude positions. Then, I created vector `tor_z_n` to identify all "^\\s+" elements in the original vector, `tor_raw`. With this, I was able to identify the first "^\\s+" index following the latitude/longitude line, `t_a` and then take the very next index, `t_b`. 
+
+Apologies for the non-descriptive names; I was lacking ingenuity.
+
+With `t_a` and `t_b`, I used `map2` through `tor_raw` to extract each subset. From that point there was some cleaning to bring the lines together as needed. If you have any better (even if slower, but more creative), I would love to hear them! I may have tried to get too creative with this task.
+
+The regex was very similar to the `rain` regex as most items were evenly delimited.
