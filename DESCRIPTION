@@ -6,8 +6,7 @@ Authors@R:
            family = "Trice",
            role = c("aut", "cre"),
            email = "tim.trice@gmail.com")
-Description: An analysis of storm reports in the immediate
-    aftermath of Hurricane Harvey.
+Description: A R project collecting Hurricane Harvey preliminary reports, extracting observations and saving to tidy data formats.
 License: MIT + file LICENSE
 Depends: 
     dplyr,

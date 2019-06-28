@@ -1,6 +1,4 @@
 
-[![minimal R
-version](https://img.shields.io/badge/R%3E%3D--6666ff.svg)](https://cran.r-project.org/)
 [![Netlify
 Status](https://api.netlify.com/api/v1/badges/b3a76bf0-ec22-487d-b567-7c2ea7ff4812/deploy-status)](https://app.netlify.com/sites/hurricane-harvey-prelims/deploys)
 ![Build
@@ -12,7 +10,7 @@ Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/timtrice/hurr
 
 # Hurricane Harvey Storm Reports (0.0.1)
 
-## An analysis of storm reports in the immediate aftermath of Hurricane Harvey.
+## A R project collecting Hurricane Harvey preliminary reports, extracting observations and saving to tidy data formats.
 
 ### Prerequisites
 
