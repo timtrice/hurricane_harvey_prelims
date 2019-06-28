@@ -1,16 +1,14 @@
 Type: Compendium
 Package: Hurricane Harvey Storm Reports
-Title: What the Package Does (One Line, Title Case)
 Version: 0.0.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Tim",
+           family = "Trice",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: An analysis if storm reports in the immediate
+           email = "tim.trice@gmail.com")
+Description: An analysis of storm reports in the immediate
     aftermath of Hurricane Harvey.
-License: What license it uses
+License: MIT + file LICENSE
 Depends: 
     dplyr,
     ggrepel,

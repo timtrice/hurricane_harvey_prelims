@@ -12,12 +12,26 @@ Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/timtrice/hurr
 
 # Hurricane Harvey Storm Reports (0.0.1)
 
-## What the Package Does (One Line, Title Case)
+## An analysis of storm reports in the immediate aftermath of Hurricane Harvey.
 
 ### Prerequisites
 
-| Package | Version |
-| :------ | :------ |
+| Package       | Version |
+| :------------ | :------ |
+| dplyr         | \*      |
+| ggrepel       | \*      |
+| glue          | \*      |
+| here          | \*      |
+| knitr         | \*      |
+| lubridate     | \*      |
+| purrr         | \*      |
+| rmarkdown     | \*      |
+| rrricanes     | \*      |
+| rrricanesdata | \*      |
+| stringr       | \*      |
+| tibble        | \*      |
+| tidyverse     | \*      |
+| workflowr     | \*      |
 
 \* - Version not specified
 
@@ -46,7 +60,7 @@ available, see the [tags on this repository](/tags).
 
 ### Authors
 
-  - Last, First (Role(s): aut, cre)
+  - Trice, Tim (Role(s): aut, cre)
 
 ### License
 
