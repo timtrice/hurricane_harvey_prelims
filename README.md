@@ -1,73 +1,56 @@
-# hurricane_harvey_prelims
 
-`hurricane_harvey_prelims` is an analysis project that has collected text products from the National Weather Service offices in Brownsville, Corpus Christi, Austin/San Antonio, and Houston, Texas, and Lake Charles, and New Orleans Louisiana. The project extracts and moves into tidy datasets the information obtained from these products.
+[![minimal R
+version](https://img.shields.io/badge/R%3E%3D--6666ff.svg)](https://cran.r-project.org/)
+[![Netlify
+Status](https://api.netlify.com/api/v1/badges/b3a76bf0-ec22-487d-b567-7c2ea7ff4812/deploy-status)](https://app.netlify.com/sites/hurricane-harvey-prelims/deploys)
+![Build
+Status](https://img.shields.io/travis/timtrice/hurricane_harvey_prelims/master.svg)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Launch Rstudio
+Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/timtrice/hurricane_harvey_prelims/master?urlpath=rstudio)
 
-The project consists of a report detailing the observations collected for rainfall, wind, and tornadic activity. The project also contains an explanation on how the data was obtained and how it was cleaned and formatted. 
+# Hurricane Harvey Storm Reports (0.0.1)
 
-The project uses the `workflowr` package as a means of organization, but it is not required to run the code.
-
-## Getting Started
+## What the Package Does (One Line, Title Case)
 
 ### Prerequisites
 
-This project relies on text products dated at a specific time. The sites collected are:
+| Package | Version |
+| :------ | :------ |
 
-* [Brownsville, TX (BRO)](ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.kbro.psh.bro.txt)
+\* - Version not specified
 
-* [Corpus Christi, TX (CRP)](ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.kcrp.psh.crp.txt)
+### Built With
 
-* [Austin/San Antonion, TX (EWX)](ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.kewx.psh.ewx.txt)
+  - [R](https://www.r-project.org/) - The R Project for Statistical
+    Computing
 
-* [Houston, TX (HGX)](ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.khgx.psh.hgx.txt)
+### Contributing
 
-* [Lake Charles, LA (LCH)](ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.klch.psh.lch.txt)
+Please read [CONTRIBUTING.md](/blob/master/.github/CONTRIBUTING.md) for
+details on our code of conduct, and the process for submitting pull
+requests to us.
 
-* [New Orleans, LA (LIX)](ftp://tgftp.nws.noaa.gov/data/raw/ac/acus74.klix.psh.lix.txt)
+### Code of Conduct
 
-#### Downloading Data
+Please note that the ‘Hurricane Harvey Storm Reports’ project is
+released with a [Contributor Code of
+Conduct](.github/CODE_OF_CONDUCT.md). By contributing to this project,
+you agree to abide by its terms.
 
-At any time the links above may be updated with new information on ***unrelated*** storm activity. Therefore, the products were downloaded at the original time of writing and saved. The raw products are saved in the ./data directory. The script to do this is ./code/01_download_data.R.
+### Versioning
 
-#### Data Cleaning
+We use [SemVer](http://semver.org/) for versioning. For the versions
+available, see the [tags on this repository](/tags).
 
-The script that performs the data extractions and transformations is ./code/02_parse_text.R. 
+### Authors
 
-This script reads the downloaded text files, examines each section of each text file, and, using regex patterns, collects the information into it's appropriate dataset;
+  - Last, First (Role(s): aut, cre)
 
-* `rain_df` - Rainfall observations
+### License
 
-* `slp_df` - Sea Level Pressure observations
+This project is licensed under the MIT License - see the
+[LICENSE.md](LICENSE.md) file for details
 
-* `tor_df` - Tornado observations
-
-#### Required Packages
-
-* ggrepel 0.8.0
-
-* knitr 1.21
-
-* lubridate 1.7.4
-
-* rrricanes 0.2.0-6.9000
-
-* rrricanesdata 0.1.7
-
-* tidyverse 1.2.1
-
-* workflowr 0.2.0
-
-## Built With
-
-* [R 3.5.2](https://www.r-project.org/) - The R Project for Statistical Computing
-
-## Contributing
-
-Please read [Contributing](https://github.com/timtrice/hurricane_harvey_prelims/blob/master/.github/CONTRIBUTING.md) for details on code of conduct.
-
-## Authors
-
-* [Tim Trice](https://github.com/timtrice)
-
-## License
-
-[GNU GENERAL PUBLIC LICENSE](https://github.com/timtrice/hurricane_harvey_prelims/blob/master/LICENSE)
+### Acknowledgements

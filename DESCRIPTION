@@ -1,0 +1,30 @@
+Type: Compendium
+Package: Hurricane Harvey Storm Reports
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.1
+Authors@R: 
+    person(given = "First",
+           family = "Last",
+           role = c("aut", "cre"),
+           email = "first.last@example.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: An analysis if storm reports in the immediate
+    aftermath of Hurricane Harvey.
+License: What license it uses
+Depends: 
+    dplyr,
+    ggrepel,
+    glue,
+    here,
+    knitr,
+    lubridate,
+    purrr,
+    rmarkdown,
+    rrricanes,
+    rrricanesdata,
+    stringr,
+    tibble,
+    tidyverse,
+    workflowr
+Encoding: UTF-8
+LazyData: true
