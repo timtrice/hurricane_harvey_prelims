@@ -6,6 +6,7 @@ git config --global user.email "tim.trice@gmail.com"
 git clone https://github.com/timtrice/hurricane_harvey_prelims.git
 cd hurricane_harvey_prelims
 git checkout develop
+Rscript --verbose R/01_install_packages.R
 Rscript -e 'rmarkdown::render_site(".");'
 
 if [ ! -d "docs" ]
