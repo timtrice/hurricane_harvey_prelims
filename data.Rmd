@@ -1,7 +1,7 @@
 ---
 title: "Code"
-site: workflowr::wflow_site
-output: workflowr::wflow_html
+description: |
+  How the hurricane preliminary reports were scraped and parsed.
 ---
 
 ```{r setup, include = FALSE}
