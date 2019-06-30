@@ -22,24 +22,22 @@ chat](https://badges.gitter.im/hurricane_harvey_prelims/community.svg)](https://
 
 ### Prerequisites
 
-| Package       | Version |
-| :------------ | :------ |
-| desc          | \*      |
-| dplyr         | \*      |
-| ggrepel       | \*      |
-| glue          | \*      |
-| here          | \*      |
-| knitr         | \*      |
-| lubridate     | \*      |
-| purrr         | \*      |
-| rmarkdown     | \*      |
-| rrricanes     | \*      |
-| rrricanesdata | \*      |
-| stringr       | \*      |
-| tibble        | \*      |
-| tidyverse     | \*      |
-| usethis       | \*      |
-| workflowr     | \*      |
+| Package   | Version |
+| :-------- | :------ |
+| desc      | \*      |
+| dplyr     | \*      |
+| ggrepel   | \*      |
+| glue      | \*      |
+| here      | \*      |
+| knitr     | \*      |
+| lubridate | \*      |
+| purrr     | \*      |
+| rmarkdown | \*      |
+| stringr   | \*      |
+| tibble    | \*      |
+| tidyverse | \*      |
+| usethis   | \*      |
+| workflowr | \*      |
 
 Version not specified
 
