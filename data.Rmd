@@ -14,6 +14,14 @@ knitr::opts_chunk$set(
 )
 ```
 
+```{r source}
+source(here::here("./R/functions.R"))
+```
+
+```{r settings}
+input <- knitr::current_input()
+```
+
 ```{r code, include = FALSE}
 knitr::read_chunk(path = here::here("./code/03_parse_text.R"))
 ```
@@ -341,3 +349,9 @@ Apologies for the non-descriptive names; I was lacking ingenuity.
 With `t_a` and `t_b`, I used `map2` through `tor_raw` to extract each subset. From that point there was some cleaning to bring the lines together as needed. If you have any better (even if slower, but more creative), I would love to hear them! I may have tried to get too creative with this task.
 
 The regex was very similar to the `rain` regex as most items were evenly delimited.
+
+```{r child = here::here("./children/previous_revisions.Rmd")}
+```
+
+```{r child = here::here("./children/session_info.Rmd")}
+```
