@@ -20,13 +20,14 @@ Depends:
     lubridate,
     purrr,
     rmarkdown,
-    rrricanes,
-    rrricanesdata,
     stringr,
     tibble,
     tidyverse,
     usethis,
     workflowr
+Remotes:
+    github::ropensci/rrricanes, 
+    github::ropensci/rrricanesdata
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/timtrice/hurricane_harvey_prelims
