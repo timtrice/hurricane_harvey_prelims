@@ -8,7 +8,11 @@ ENV ENV_DIR=$DIR
 
 RUN apt-get update \
   && apt-get install -y \
+    libmagick++-dev \
+    libudunits2-dev \
+    libgdal-dev \
     libpng-dev \
+    libproj-dev \
     libxml2-dev \
     vim
 

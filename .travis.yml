@@ -4,6 +4,17 @@ if: branch = develop
 
 language: r
 cache: packages
+
+addons:
+  apt:
+    sources:
+      - sourceline: 'ppa:ubuntugis/ppa'
+    packages:
+      - libudunits2-dev
+      - libproj-dev
+      - libgeos-dev
+      - libgdal-dev
+
 script:
   - bash deploy.sh
 on:
