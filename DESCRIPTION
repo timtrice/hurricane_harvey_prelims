@@ -1,5 +1,6 @@
 Type: Compendium
 Package: Hurricane Harvey Storm Reports
+Title: An analysis of Hurricane Harvey preliminary storm reports
 Version: 0.0.1
 Authors@R: 
     person(given = "Tim",
@@ -9,6 +10,7 @@ Authors@R:
 Description: A R project collecting Hurricane Harvey preliminary reports, extracting observations and saving to tidy data formats.
 License: MIT + file LICENSE
 Depends: 
+    desc,
     dplyr,
     ggrepel,
     glue,
@@ -17,11 +19,15 @@ Depends:
     lubridate,
     purrr,
     rmarkdown,
-    rrricanes,
-    rrricanesdata,
     stringr,
     tibble,
     tidyverse,
+    usethis,
     workflowr
+Remotes:
+    github::ropensci/rrricanes@v0.2.0-6, 
+    github::ropensci/rrricanesdata
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/timtrice/hurricane_harvey_prelims
+BugReports: https://github.com/timtrice/hurricane_harvey_prelims/issues
