@@ -11,6 +11,7 @@ Description: A R project collecting Hurricane Harvey preliminary reports, extrac
 License: MIT + file LICENSE
 Depends: 
     desc,
+    distill, 
     dplyr,
     ggrepel,
     glue,
