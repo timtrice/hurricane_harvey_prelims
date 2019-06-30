@@ -1,5 +1,8 @@
-name: "hurricane_harvey_prelims"
-output_dir: "../docs"
+name: "distill"
+title: "Hurricane Harvey Storm Reports"
+description: |
+  An analysis of storm reports in the immediate aftermath of Hurricane Harvey.
+output_dir: "docs"
 navbar:
   title: "Hurricane Harvey Preliminary Reports"
   left:
@@ -8,12 +11,9 @@ navbar:
     - text: "The Data"
       href: data.html
   right:
-    - icon: fa-github
+    - icon: fab fa-github
       href: https://github.com/timtrice/hurricane_harvey_prelims
-output:
-  workflowr::wflow_html:
-    toc: true
-    toc_float: false
-    toc_depth: 6
-    theme: cosmo
-    highlight: textmate
+    - icon: fab fa-docker
+      href: https://cloud.docker.com/repository/docker/timtrice/hurricane_harvey_prelims
+output: distill::distill_article
+exclude: ["data", "deploy.sh", "DESCRIPTION", "Dockerfile", "LICENSE", "output", "R", "README.Rmd", "README.md"]
