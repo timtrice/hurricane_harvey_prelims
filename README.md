@@ -13,6 +13,8 @@ rstudio.cloud](https://img.shields.io/badge/launch-rstudio.cloud-yellowgreen.svg
 Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/timtrice/hurricane_harvey_prelims/master?urlpath=rstudio)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![gitter
+chat](https://badges.gitter.im/hurricane_harvey_prelims/community.svg)](https://gitter.im/hurricane_harvey_prelims/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # Hurricane Harvey Storm Reports (0.0.1)
 
