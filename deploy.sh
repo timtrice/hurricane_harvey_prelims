@@ -4,7 +4,7 @@ FULL_REPO="https://$GH_TOKEN$GH_REPO"
 git config --global user.name "Travis CI"
 git config --global user.email "tim.trice@gmail.com"
 git clone https://github.com/timtrice/hurricane_harvey_prelims.git
-cd distill
+cd hurricane_harvey_prelims
 git checkout develop
 Rscript -e 'rmarkdown::render_site(".");'
 
