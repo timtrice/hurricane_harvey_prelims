@@ -2,6 +2,7 @@ name: "distill"
 title: "Hurricane Harvey Storm Reports"
 description: |
   An analysis of storm reports in the immediate aftermath of Hurricane Harvey.
+google_analytics: "UA-1507390-30"
 output_dir: "docs"
 navbar:
   title: "Hurricane Harvey Preliminary Reports"
