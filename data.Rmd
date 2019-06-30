@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r code, include = FALSE}
-knitr::read_chunk(path = here::here("./code/02_parse_text.R"))
+knitr::read_chunk(path = here::here("./code/03_parse_text.R"))
 ```
 
 These text products are listed under the header ACUS74. They can be found on the [National Weather Service FTP server](ftp://tgftp.nws.noaa.gov/data/raw/ac/).
