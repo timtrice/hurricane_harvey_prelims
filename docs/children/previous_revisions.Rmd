@@ -1,0 +1,15 @@
+## Previous Revisions
+
+```{r previous-revisions}
+input %>% 
+  self_get_versions() %>% 
+  dplyr::mutate(
+    Version = kableExtra::text_spec(short_sha, link = url)
+  ) %>%
+  dplyr::select(Version, Message, Date, Author) %>%
+  knitr::kable(
+    row.names = FALSE, 
+    escape = FALSE
+  ) %>% 
+  kableExtra::kable_styling()
+```

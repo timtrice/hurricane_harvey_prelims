@@ -1,0 +1,28 @@
+## Session Info
+
+```{r session-info}
+si <- sessioninfo::session_info()
+```
+
+```{r si-platform}
+si$platform
+```
+
+```{r si-packages, echo = FALSE, fig.align = "center"}
+si$packages %>% 
+  dplyr::filter(attached == TRUE) %>%
+  dplyr::select(
+    package, loadedversion, date, source
+  ) %>% 
+  knitr::kable(
+    row.names = FALSE, 
+    col.names = c(
+      "Package", "Version", "Date", "Source"
+    ), 
+    booktabs = TRUE
+  ) %>% 
+  kableExtra::kable_styling(
+    position = "center"
+  )
+```
+
